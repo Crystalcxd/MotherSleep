@@ -64,7 +64,6 @@
 		4CD4F04D1D8D6D060014C99F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4F0141D8D6D060014C99F /* Utility.m */; };
 		4CD4F04E1D8D6D060014C99F /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4F0171D8D6D060014C99F /* WMUserDefault.m */; };
 		4CD4F04F1D8D6D060014C99F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4F0191D8D6D060014C99F /* ViewController.m */; };
-		4CD4F0511D8D6D260014C99F /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4F0501D8D6D260014C99F /* AVOSCloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,7 +170,6 @@
 		4CD4F0171D8D6D060014C99F /* WMUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMUserDefault.m; sourceTree = "<group>"; };
 		4CD4F0181D8D6D060014C99F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4CD4F0191D8D6D060014C99F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4CD4F0501D8D6D260014C99F /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		549549A55957B03CD50BEAA2 /* Pods-MotherSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotherSleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep.debug.xcconfig"; sourceTree = "<group>"; };
 		57E14B1C5A79922F047850AD /* Pods-MotherSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotherSleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep.release.xcconfig"; sourceTree = "<group>"; };
 		8488B8373BBCB1315C1D6280 /* libPods-MotherSleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotherSleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD4F02B1D8D6D060014C99F /* libWeChatSDK.a in Frameworks */,
-				4CD4F0511D8D6D260014C99F /* AVOSCloud.framework in Frameworks */,
 				306D8A7195E0202CD369404B /* libPods-MotherSleep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +214,6 @@
 		4CD4EF7E1D8D6C820014C99F = {
 			isa = PBXGroup;
 			children = (
-				4CD4F0501D8D6D260014C99F /* AVOSCloud.framework */,
 				4CD4EFBD1D8D6D060014C99F /* MotherSleep */,
 				4CD4EFA31D8D6C830014C99F /* MotherSleepTests */,
 				4CD4EFAE1D8D6C830014C99F /* MotherSleepUITests */,
