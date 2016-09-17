@@ -70,7 +70,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
     [WMUserDefault setBoolVaule:[WXApi isWXAppInstalled] forKey:@"WXInstalled"];
     
-    UMConfigInstance.appKey = @"57dd6072e0f55adf01002535";
+    UMConfigInstance.appKey = @"57dd6746e0f55adf01002a0f";
     UMConfigInstance.channelId = @"App Store";
     [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
     
