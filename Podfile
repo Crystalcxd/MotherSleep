@@ -19,7 +19,6 @@ pod 'HMSegmentedControl'
 
 # Vendor
 pod 'WeChat_SDK', '~> 1.7.2.1'
-pod 'AVOSCloud', '~> 3.4.0'
 pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛

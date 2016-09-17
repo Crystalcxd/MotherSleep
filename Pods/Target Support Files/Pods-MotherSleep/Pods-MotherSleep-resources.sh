@@ -80,7 +80,6 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib"
@@ -90,7 +89,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "WeiboSDK/libWeiboSDK/WeiboSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib"

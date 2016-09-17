@@ -14,6 +14,8 @@
 
 #import "WMUserDefault.h"
 
+#import "UMMobClick/MobClick.h"
+
 #import "MMPDeepSleepPreventer.h"
 
 @interface AppDelegate ()
@@ -68,8 +70,12 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
     [WMUserDefault setBoolVaule:[WXApi isWXAppInstalled] forKey:@"WXInstalled"];
     
-    [AVOSCloud setApplicationId:@"qi43vyBpAN1ACJWse9cPby5B-gzGzoHsz" clientKey:@"y8HAj5dRIRnOJ0ApXCa9UmPC"];
-    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    UMConfigInstance.appKey = @"57dd6072e0f55adf01002535";
+    UMConfigInstance.channelId = @"App Store";
+    [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+    
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
 
     //增强后台运行
     MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];

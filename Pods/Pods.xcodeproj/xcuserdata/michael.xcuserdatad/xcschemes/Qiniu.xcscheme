@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '17878ABCC7F11E863B06A560A4EDFCA9'
+               BlueprintIdentifier = 'CC0C36774C9EBFC75B1667786BCA8B07'
                BlueprintName = 'Qiniu'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libQiniu.a'>
