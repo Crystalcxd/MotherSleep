@@ -7,7 +7,6 @@
 //
 
 #import "LeftViewController.h"
-//#import "LeadViewController.h"
 #import "SliderViewController.h"
 
 #import "NoiseViewController.h"
@@ -44,9 +43,16 @@
     titleView.image = [UIImage imageNamed:@"momsleep_menu"];
     [self.view addSubview:titleView];
         
-    NSArray *imageArr = [NSArray arrayWithObjects:@"noise",@"share",@"advice", nil];
-    NSArray *selectImageArr = [NSArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
-    NSArray *titleArr = [NSArray arrayWithObjects:@"睡眠音乐",@"分享给好友",@"您的建议", nil];
+    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
+    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"睡眠音乐",@"分享给好友",@"您的建议", nil];
+    
+    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+    if (!wxInstalled) {
+        [imageArr removeObjectAtIndex:1];
+        [selectImageArr removeObjectAtIndex:1];
+        [titleArr removeObjectAtIndex:1];
+    }
     
     for (int i = 0; i < imageArr.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
@@ -89,12 +95,18 @@
 
 - (void)btnAction:(id)sender
 {
+    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+
     UIButton *btn = (UIButton *)sender;
     
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        [self goShareView];
+        if (wxInstalled) {
+            [self goShareView];
+        }else{
+            [self sendMail];
+        }
     }else{
         [self sendMail];
     }

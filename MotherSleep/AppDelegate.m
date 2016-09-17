@@ -66,6 +66,8 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
     [WXApi registerApp:WXAppId];
 
+    [WMUserDefault setBoolVaule:[WXApi isWXAppInstalled] forKey:@"WXInstalled"];
+    
     [AVOSCloud setApplicationId:@"qi43vyBpAN1ACJWse9cPby5B-gzGzoHsz" clientKey:@"y8HAj5dRIRnOJ0ApXCa9UmPC"];
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 

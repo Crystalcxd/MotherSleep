@@ -12,8 +12,6 @@
 		4CD4EFB01D8D6C830014C99F /* MotherSleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFAF1D8D6C830014C99F /* MotherSleepUITests.m */; };
 		4CD4F01A1D8D6D060014C99F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFBF1D8D6D060014C99F /* AppDelegate.m */; };
 		4CD4F01B1D8D6D060014C99F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC01D8D6D060014C99F /* Assets.xcassets */; };
-		4CD4F01C1D8D6D060014C99F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC11D8D6D060014C99F /* LaunchScreen.storyboard */; };
-		4CD4F01D1D8D6D060014C99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC31D8D6D060014C99F /* Main.storyboard */; };
 		4CD4F01E1D8D6D060014C99F /* CartoonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC61D8D6D060014C99F /* CartoonHeadView.m */; };
 		4CD4F01F1D8D6D060014C99F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC71D8D6D060014C99F /* Images.xcassets */; };
 		4CD4F0201D8D6D060014C99F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFC81D8D6D060014C99F /* Info.plist */; };
@@ -27,7 +25,6 @@
 		4CD4F0281D8D6D060014C99F /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFD91D8D6D060014C99F /* MusicCell.m */; };
 		4CD4F0291D8D6D060014C99F /* AudioTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFDC1D8D6D060014C99F /* AudioTask.m */; };
 		4CD4F02A1D8D6D060014C99F /* NoiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFDE1D8D6D060014C99F /* NoiseViewController.m */; };
-		4CD4F02B1D8D6D060014C99F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4EFE01D8D6D060014C99F /* libWeChatSDK.a */; };
 		4CD4F02C1D8D6D060014C99F /* 华康圆体W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFE61D8D6D060014C99F /* 华康圆体W3.otf */; };
 		4CD4F02D1D8D6D060014C99F /* 华康圆体W5.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFE71D8D6D060014C99F /* 华康圆体W5.TTF */; };
 		4CD4F02E1D8D6D060014C99F /* bl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4EFE91D8D6D060014C99F /* bl.mp3 */; };
@@ -94,8 +91,6 @@
 		4CD4EFBE1D8D6D060014C99F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CD4EFBF1D8D6D060014C99F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CD4EFC01D8D6D060014C99F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CD4EFC21D8D6D060014C99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4CD4EFC41D8D6D060014C99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CD4EFC51D8D6D060014C99F /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
 		4CD4EFC61D8D6D060014C99F /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
 		4CD4EFC71D8D6D060014C99F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -118,10 +113,6 @@
 		4CD4EFDC1D8D6D060014C99F /* AudioTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTask.m; sourceTree = "<group>"; };
 		4CD4EFDD1D8D6D060014C99F /* NoiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseViewController.h; sourceTree = "<group>"; };
 		4CD4EFDE1D8D6D060014C99F /* NoiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseViewController.m; sourceTree = "<group>"; };
-		4CD4EFE01D8D6D060014C99F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		4CD4EFE11D8D6D060014C99F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		4CD4EFE21D8D6D060014C99F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		4CD4EFE31D8D6D060014C99F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		4CD4EFE61D8D6D060014C99F /* 华康圆体W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W3.otf"; sourceTree = "<group>"; };
 		4CD4EFE71D8D6D060014C99F /* 华康圆体W5.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W5.TTF"; sourceTree = "<group>"; };
 		4CD4EFE91D8D6D060014C99F /* bl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bl.mp3; sourceTree = "<group>"; };
@@ -180,7 +171,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD4F02B1D8D6D060014C99F /* libWeChatSDK.a in Frameworks */,
 				306D8A7195E0202CD369404B /* libPods-MotherSleep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +247,6 @@
 				4CD4EFBE1D8D6D060014C99F /* AppDelegate.h */,
 				4CD4EFBF1D8D6D060014C99F /* AppDelegate.m */,
 				4CD4EFC01D8D6D060014C99F /* Assets.xcassets */,
-				4CD4EFC11D8D6D060014C99F /* LaunchScreen.storyboard */,
-				4CD4EFC31D8D6D060014C99F /* Main.storyboard */,
 				4CD4EFC51D8D6D060014C99F /* CartoonHeadView.h */,
 				4CD4EFC61D8D6D060014C99F /* CartoonHeadView.m */,
 				4CD4EFC71D8D6D060014C99F /* Images.xcassets */,
@@ -278,7 +266,6 @@
 				4CD4EFDA1D8D6D060014C99F /* MusicHelper */,
 				4CD4EFDD1D8D6D060014C99F /* NoiseViewController.h */,
 				4CD4EFDE1D8D6D060014C99F /* NoiseViewController.m */,
-				4CD4EFDF1D8D6D060014C99F /* opensource */,
 				4CD4EFE41D8D6D060014C99F /* Resource */,
 				4CD4F0011D8D6D060014C99F /* SetEndTimeView.h */,
 				4CD4F0021D8D6D060014C99F /* SetEndTimeView.m */,
@@ -335,17 +322,6 @@
 				4CD4EFDC1D8D6D060014C99F /* AudioTask.m */,
 			);
 			path = MusicHelper;
-			sourceTree = "<group>";
-		};
-		4CD4EFDF1D8D6D060014C99F /* opensource */ = {
-			isa = PBXGroup;
-			children = (
-				4CD4EFE01D8D6D060014C99F /* libWeChatSDK.a */,
-				4CD4EFE11D8D6D060014C99F /* WechatAuthSDK.h */,
-				4CD4EFE21D8D6D060014C99F /* WXApi.h */,
-				4CD4EFE31D8D6D060014C99F /* WXApiObject.h */,
-			);
-			path = opensource;
 			sourceTree = "<group>";
 		};
 		4CD4EFE41D8D6D060014C99F /* Resource */ = {
@@ -552,7 +528,6 @@
 				4CD4F0421D8D6D060014C99F /* icon120.png in Resources */,
 				4CD4F0391D8D6D060014C99F /* ywgh.mp3 in Resources */,
 				4CD4F02D1D8D6D060014C99F /* 华康圆体W5.TTF in Resources */,
-				4CD4F01D1D8D6D060014C99F /* Main.storyboard in Resources */,
 				4CD4F0441D8D6D060014C99F /* slide_enable@2x.png in Resources */,
 				4CD4F0351D8D6D060014C99F /* xjnm.mp3 in Resources */,
 				4CD4F03F1D8D6D060014C99F /* 6.png in Resources */,
@@ -571,7 +546,6 @@
 				4CD4F02E1D8D6D060014C99F /* bl.mp3 in Resources */,
 				4CD4F0361D8D6D060014C99F /* xnqc.mp3 in Resources */,
 				4CD4F0341D8D6D060014C99F /* wsyp.mp3 in Resources */,
-				4CD4F01C1D8D6D060014C99F /* LaunchScreen.storyboard in Resources */,
 				4CD4F0311D8D6D060014C99F /* my.mp3 in Resources */,
 				4CD4F0381D8D6D060014C99F /* xycm.mp3 in Resources */,
 				4CD4F0241D8D6D060014C99F /* MMPSilence.wav in Resources */,
@@ -704,25 +678,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		4CD4EFC11D8D6D060014C99F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CD4EFC21D8D6D060014C99F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4CD4EFC31D8D6D060014C99F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CD4EFC41D8D6D060014C99F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4CD4EFB21D8D6C830014C99F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -817,6 +772,7 @@
 			baseConfigurationReference = 549549A55957B03CD50BEAA2 /* Pods-MotherSleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEVELOPMENT_TEAM = TGV2ER7UVL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -839,6 +795,7 @@
 			baseConfigurationReference = 57E14B1C5A79922F047850AD /* Pods-MotherSleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				DEVELOPMENT_TEAM = TGV2ER7UVL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
