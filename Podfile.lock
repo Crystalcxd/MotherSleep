@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - ELCImagePickerController (0.2.0)
   - HappyDNS (0.3.10)
-  - HMSegmentedControl (1.5.2)
+  - HMSegmentedControl (1.5.3)
   - Mantle (1.5.8):
     - Mantle/extobjc (= 1.5.8)
   - Mantle/extobjc (1.5.8)
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
-  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
