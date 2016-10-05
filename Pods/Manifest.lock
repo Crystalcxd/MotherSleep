@@ -14,51 +14,93 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
+  - DateTools (1.7.0)
   - ELCImagePickerController (0.2.0)
+  - GBDeviceInfo (4.2.2):
+    - GBDeviceInfo/Core (= 4.2.2)
+  - GBDeviceInfo/Core (4.2.2)
+  - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
   - Mantle (1.5.8):
     - Mantle/extobjc (= 1.5.8)
   - Mantle/extobjc (1.5.8)
+  - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (2.5.0)
   - Qiniu (7.1.1):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
+  - RDVTabBarController (1.1.9)
+  - RegexKitLite (4.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SlackTextViewController (1.9.5)
+  - TTTAttributedLabel (2.0.0)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.1)
+  - WebViewJavascriptBridge (5.0.5)
   - WeChat_SDK (1.7.2.1)
   - WeiboSDK (3.1.3)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - DACircularProgress
+  - DateTools (~> 1.7.0)
   - ELCImagePickerController (~> 0.2.0)
+  - GBDeviceInfo
+  - GVUserDefaults (~> 1.0.2)
   - HMSegmentedControl
   - Mantle (~> 1.5.0)
+  - Masonry (~> 1.0.2)
   - MBProgressHUD
   - MJRefresh (~> 2.0)
   - Qiniu
+  - RDVTabBarController (~> 1.1.9)
+  - RegexKitLite (~> 4.0)
   - SDWebImage
+  - SlackTextViewController
+  - TTTAttributedLabel (~> 2.0.0)
+  - UIActivityIndicator-for-SDWebImage
+  - UITableView+FDTemplateLayoutCell (= 1.3)
   - UMengAnalytics-NO-IDFA
+  - WebViewJavascriptBridge (~> 5.0.5)
   - WeChat_SDK (~> 1.7.2.1)
   - WeiboSDK
+  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
+  GBDeviceInfo: 0a6e2fc04989ce248572bb988f1a764102eb0e5d
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
   Qiniu: 5e5d7d759d22393bb4b87cdfacf8fab951260f3e
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 5a922dc289ec652bde3987b7431e44cbf085aef2
+PODFILE CHECKSUM: 60f54c285633cc0343262d31122d4ffa6702eece
 
 COCOAPODS: 1.0.1
