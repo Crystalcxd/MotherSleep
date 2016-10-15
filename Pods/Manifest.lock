@@ -29,7 +29,7 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (2.5.0)
-  - Qiniu (7.1.1):
+  - Qiniu (7.1.2):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
@@ -87,7 +87,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
-  Qiniu: 5e5d7d759d22393bb4b87cdfacf8fab951260f3e
+  Qiniu: d57cb922b5c31f0d1cfe2c8fea3cf83997cdcf62
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
