@@ -42,7 +42,7 @@ PODS:
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.3)
-  - UMengAnalytics-NO-IDFA (4.1.1)
+  - UMengAnalytics-NO-IDFA (4.1.3)
   - WebViewJavascriptBridge (5.0.5)
   - WeChat_SDK (1.7.2.1)
   - WeiboSDK (3.1.3)
@@ -95,7 +95,7 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
-  UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
+  UMengAnalytics-NO-IDFA: b26a7003458204d4549b6bd132c2f07dd5942b86
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
