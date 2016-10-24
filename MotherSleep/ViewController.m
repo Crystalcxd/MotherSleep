@@ -78,7 +78,7 @@
     [self.view addSubview:bgView];
     
     self.picArray = [NSMutableArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7", nil];
-    self.titleImgArray = [NSMutableArray arrayWithObjects:@"溪涧鸟鸣",@"鸟语清晨",@"喧闹清晨",@"夏夜虫鸣",@"蛙声一片",@"野外篝火",@"壁炉",@"水滴",@"流水",@"夏雨",@"密雨",@"海浪风铃", nil];
+    self.titleImgArray = [NSMutableArray arrayWithObjects:NSLocalizedString(@"xjnm", nil),NSLocalizedString(@"nyqc", nil),NSLocalizedString(@"xnqc", nil),NSLocalizedString(@"xycm", nil),NSLocalizedString(@"wsyp", nil),NSLocalizedString(@"ywgh", nil),NSLocalizedString(@"bl", nil),NSLocalizedString(@"sd", nil),NSLocalizedString(@"ls", nil),NSLocalizedString(@"xy", nil),NSLocalizedString(@"my", nil),NSLocalizedString(@"hlfl", nil), nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"xjnm",@"nyqc",@"xnqc",@"xycm",@"wsyp",@"ywgh",@"bl",@"sd",@"ls",@"xy",@"my",@"hlfl", nil];
     self.volumArray = [NSMutableArray array];
     
@@ -160,11 +160,11 @@
         scrollViewY = 674;
     }
 
-    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
-    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
-    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:adBtn];
+//    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
+//    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
+//    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:adBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetSelectMusic) name:@"resetSelectMusic" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:@"reloadTableView" object:nil];

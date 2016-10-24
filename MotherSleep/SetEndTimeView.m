@@ -39,21 +39,21 @@
         
         UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         cancelBtn.frame = CGRectMake(0, 0, 60, 40);
-        [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [cancelBtn setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
         [cancelBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [cancelBtn addTarget:self action:@selector(fadeView) forControlEvents:UIControlEventTouchUpInside];
         [self.boardView addSubview:cancelBtn];
         
         UIButton *confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        confirmBtn.frame = CGRectMake(SCREENWIDTH - 60, 0, 60, 40);
-        [confirmBtn setTitle:@"确定" forState:UIControlStateNormal];
+        confirmBtn.frame = CGRectMake(SCREENWIDTH - 65, 0, 65, 40);
+        [confirmBtn setTitle:NSLocalizedString(@"Comfirm", nil) forState:UIControlStateNormal];
         [confirmBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [confirmBtn addTarget:self action:@selector(confirmEndTime) forControlEvents:UIControlEventTouchUpInside];
         [self.boardView addSubview:confirmBtn];
 
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 40)];
         titleLabel.textAlignment = NSTextAlignmentCenter;
-        titleLabel.text = @"请设置音乐停止时间";
+        titleLabel.text = NSLocalizedString(@"SetTime", nil);
         [self.boardView addSubview:titleLabel];
         
         UIDatePicker *picker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 40, SCREENWIDTH, 140)];

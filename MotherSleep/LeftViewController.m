@@ -43,16 +43,16 @@
     titleView.image = [UIImage imageNamed:@"momsleep_menu"];
     [self.view addSubview:titleView];
         
-    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
-    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"睡眠音乐",@"分享给好友",@"您的建议", nil];
+    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"advice", nil];
+    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"suggest_touch",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"sleeping music", nil),NSLocalizedString(@"YourAdvice", nil), nil];
     
-    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
-    if (!wxInstalled) {
-        [imageArr removeObjectAtIndex:1];
-        [selectImageArr removeObjectAtIndex:1];
-        [titleArr removeObjectAtIndex:1];
-    }
+//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+//    if (!wxInstalled) {
+//        [imageArr removeObjectAtIndex:1];
+//        [selectImageArr removeObjectAtIndex:1];
+//        [titleArr removeObjectAtIndex:1];
+//    }
     
     for (int i = 0; i < imageArr.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
@@ -85,8 +85,14 @@
         [self.view addSubview:clickBtn];
     }
     
-    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, 56, 20)];
-    [btn setTitle:@"其他应用" forState:UIControlStateNormal];
+    NSString *str = NSLocalizedString(@"OtherApplications", nil);
+    
+    NSDictionary *attributes = @{ NSFontAttributeName : [UIFont fontWithName:@"DFPYuanW5" size:14]};
+    
+    CGSize size = [str boundingRectWithSize:CGSizeMake(SCREENWIDTH, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    
+    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, size.width, 20)];
+    [btn setTitle:NSLocalizedString(@"OtherApplications", nil) forState:UIControlStateNormal];
     [btn setTitleColor:HexRGB(0xF8D6FF) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
@@ -95,18 +101,14 @@
 
 - (void)btnAction:(id)sender
 {
-    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
 
     UIButton *btn = (UIButton *)sender;
     
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        if (wxInstalled) {
-            [self goShareView];
-        }else{
-            [self sendMail];
-        }
+        [self sendMail];
     }else{
         [self sendMail];
     }

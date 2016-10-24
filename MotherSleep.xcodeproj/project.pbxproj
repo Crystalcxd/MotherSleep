@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		306D8A7195E0202CD369404B /* libPods-MotherSleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488B8373BBCB1315C1D6280 /* libPods-MotherSleep.a */; };
+		4CABD0B41DBE529900FF62C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0B61DBE529900FF62C2 /* Localizable.strings */; };
+		4CABD0BA1DBE535A00FF62C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */; };
 		4CD4EFA51D8D6C830014C99F /* MotherSleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFA41D8D6C830014C99F /* MotherSleepTests.m */; };
 		4CD4EFB01D8D6C830014C99F /* MotherSleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFAF1D8D6C830014C99F /* MotherSleepUITests.m */; };
 		4CD4F01A1D8D6D060014C99F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFBF1D8D6D060014C99F /* AppDelegate.m */; };
@@ -81,6 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CABD0B51DBE529900FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CABD0B71DBE52A400FF62C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4CABD0BB1DBE535A00FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CABD0BD1DBE535C00FF62C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4CD4EF871D8D6C830014C99F /* MotherSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotherSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4EFA01D8D6C830014C99F /* MotherSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotherSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4EFA41D8D6C830014C99F /* MotherSleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotherSleepTests.m; sourceTree = "<group>"; };
@@ -330,6 +336,8 @@
 				4CD4EFE51D8D6D060014C99F /* font */,
 				4CD4EFE81D8D6D060014C99F /* music */,
 				4CD4EFF51D8D6D060014C99F /* pic */,
+				4CABD0B61DBE529900FF62C2 /* Localizable.strings */,
+				4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -503,6 +511,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4CD4EF7E1D8D6C820014C99F;
 			productRefGroup = 4CD4EF881D8D6C830014C99F /* Products */;
@@ -522,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD4F0401D8D6D060014C99F /* 7.png in Resources */,
+				4CABD0BA1DBE535A00FF62C2 /* InfoPlist.strings in Resources */,
 				4CD4F03B1D8D6D060014C99F /* 2.png in Resources */,
 				4CD4F0301D8D6D060014C99F /* ls.mp3 in Resources */,
 				4CD4F0431D8D6D060014C99F /* slide_disable@2x.png in Resources */,
@@ -546,6 +556,7 @@
 				4CD4F02E1D8D6D060014C99F /* bl.mp3 in Resources */,
 				4CD4F0361D8D6D060014C99F /* xnqc.mp3 in Resources */,
 				4CD4F0341D8D6D060014C99F /* wsyp.mp3 in Resources */,
+				4CABD0B41DBE529900FF62C2 /* Localizable.strings in Resources */,
 				4CD4F0311D8D6D060014C99F /* my.mp3 in Resources */,
 				4CD4F0381D8D6D060014C99F /* xycm.mp3 in Resources */,
 				4CD4F0241D8D6D060014C99F /* MMPSilence.wav in Resources */,
@@ -678,11 +689,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		4CABD0B61DBE529900FF62C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CABD0B51DBE529900FF62C2 /* en */,
+				4CABD0B71DBE52A400FF62C2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CABD0BB1DBE535A00FF62C2 /* en */,
+				4CABD0BD1DBE535C00FF62C2 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4CD4EFB21D8D6C830014C99F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -730,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

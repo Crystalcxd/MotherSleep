@@ -33,7 +33,7 @@
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0xDC78FF);
     title.textAlignment = NSTextAlignmentCenter;
-    title.text = @"睡眠音乐";
+    title.text = NSLocalizedString(@"sleeping music", nil);
     title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     
@@ -50,7 +50,7 @@
     textView.showsHorizontalScrollIndicator = NO;
     textView.textColor = HexRGB(0x9E9E9E);
     textView.font = [UIFont fontWithName:@"DFPYuanW5" size:14];
-    textView.text = @"音乐作为一门艺术，能给人们巨大的精神享受，然而音乐也是自古以来一种行之有效的治疗方式。古埃及的巫师常常利用祈祷和吟唱来减轻孕妇分娩的痛苦，被称为是“灵魂的医生”。音乐作为治疗方式可以调节人体身心状态，舒缓紧张情绪，增进身心健康。\n\n生产之后纷繁复杂的育儿节奏，让妈妈们长期慢性疲劳和精神紧张。这里精选了数首轻柔的旋律、大自然的轻语帮助妈妈们放松身心，改善睡眠，也可作为日常放松、休闲、静心之聆听伴侣。";
+    textView.text = NSLocalizedString(@"MusicIntro", nil);
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = 14;// 字体的行间距

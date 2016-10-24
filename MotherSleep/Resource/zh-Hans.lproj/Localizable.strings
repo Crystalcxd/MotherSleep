@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  MotherSleep
+
+  Created by Michael on 2016/10/24.
+  Copyright © 2016年 Michael. All rights reserved.
+*/
+"MusicIntro" = "音乐作为一门艺术，能给人们巨大的精神享受，然而音乐也是自古以来一种行之有效的治疗方式。古埃及的巫师常常利用祈祷和吟唱来减轻孕妇分娩的痛苦，被称为是“灵魂的医生”。音乐作为治疗方式可以调节人体身心状态，舒缓紧张情绪，增进身心健康。\n生产之后纷繁复杂的育儿节奏，让妈妈们长期慢性疲劳和精神紧张。这里精选了数首轻柔的旋律、大自然的轻语帮助妈妈们放松身心，改善睡眠，也可作为日常放松、休闲、静心之聆听伴侣。";
+
+"sleeping music" = "睡眠音乐";
+
+"Mommy's quality sleep" = "妈咪好睡";
+
+"Share" = "分享给好友";
+
+"YourAdvice" = "您的建议";
+
+"OtherApplications" = "其它应用";
+
+"MotherSleepAds" = "精选睡眠音乐，帮助妈咪好眠";
+
+"Cancel" = "取消";
+
+"Confirm" = "确定";
+
+"SetTime" = "设置停止时间";
+
+"xjnm" = "溪涧鸟鸣";
+
+"nyqc" = "鸟语清晨";
+
+"xnqc" = "喧闹清晨";
+
+"xycm" = "夏夜虫鸣";
+
+"wsyp" = "蛙声一片";
+
+"ywgh" = "野外篝火";
+
+"bl" = "壁炉";
+
+"sd" = "水滴";
+
+"ls" = "流水";
+
+"xy" = "夏雨";
+
+"my" = "密雨";
+
+"hlfl" = "海浪风铃";

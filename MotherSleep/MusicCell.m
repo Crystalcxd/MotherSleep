@@ -30,7 +30,7 @@
         self.musicTitle.textColor = HexRGB(0xD0D0D0);
         [self addSubview:self.musicTitle];
         
-        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(120, 26, SCREENWIDTH - 120 - 30, 30)];
+        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(160, 26, SCREENWIDTH - 160 - 30, 30)];
         [self.slider setMinimumTrackTintColor:HexRGB(0xD0D0D0)];
         [self.slider setMaximumTrackTintColor:HexRGB(0xD0D0D0)];
         [self.slider setThumbImage:[UIImage imageNamed:@"slide_enable"] forState:UIControlStateNormal];
