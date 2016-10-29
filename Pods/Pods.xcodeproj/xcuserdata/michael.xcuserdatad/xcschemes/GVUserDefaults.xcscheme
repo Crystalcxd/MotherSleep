@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E0807A3AF0C94A8B9ECFAF0342F803E5'
+               BlueprintIdentifier = '325E0F928F4D0842ECDF259F63F1D842'
                BlueprintName = 'GVUserDefaults'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libGVUserDefaults.a'>
