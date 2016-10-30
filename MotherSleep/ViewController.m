@@ -106,7 +106,7 @@
     }
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 35, 71.58, 17.34)];
-    titleView.image = [UIImage imageNamed:@"momsleep"];
+    titleView.image = [UIImage imageNamed:NSLocalizedString(@"momsleep", nil)];
     [self.view addSubview:titleView];
     
     CGFloat scrollViewY = 98;
@@ -160,11 +160,11 @@
         scrollViewY = 674;
     }
 
-//    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
-//    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
-//    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:adBtn];
+    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
+    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
+    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:adBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetSelectMusic) name:@"resetSelectMusic" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:@"reloadTableView" object:nil];

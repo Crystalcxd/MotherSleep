@@ -5,3 +5,6 @@
   Created by Michael on 2016/10/24.
   Copyright © 2016年 Michael. All rights reserved.
 */
+CFBundleName="妈咪好睡";
+
+CFBundleDisplayName="妈咪好睡";

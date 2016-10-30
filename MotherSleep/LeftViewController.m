@@ -40,7 +40,7 @@
     [self.view addSubview:topView];
     
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 72, 39)];
-    titleView.image = [UIImage imageNamed:@"momsleep_menu"];
+    titleView.image = [UIImage imageNamed:NSLocalizedString(@"momsleep_white", nil)];
     [self.view addSubview:titleView];
         
     NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"advice", nil];
