@@ -96,7 +96,7 @@
     [btn setTitleColor:HexRGB(0xF8D6FF) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    [self.view addSubview:btn];
 }
 
 - (void)btnAction:(id)sender

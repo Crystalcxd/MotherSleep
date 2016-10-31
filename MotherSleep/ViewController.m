@@ -161,7 +161,7 @@
     }
 
     UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
+    [adBtn setImage:[UIImage imageNamed:NSLocalizedString(@"MotherSleepAdsImage", nil)] forState:UIControlStateNormal];
     adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
     [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:adBtn];

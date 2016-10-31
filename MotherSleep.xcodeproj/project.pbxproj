@@ -13,6 +13,7 @@
 		4CC8F2251DC47DF40024DA80 /* iPhone6Plus_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2241DC47DF40024DA80 /* iPhone6Plus_en@2x.png */; };
 		4CC8F2271DC47E290024DA80 /* iPhone6Plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2261DC47E290024DA80 /* iPhone6Plus@2x.png */; };
 		4CC8F22A1DC4D33D0024DA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F22C1DC4D33D0024DA80 /* LaunchScreen.storyboard */; };
+		4CC8F2331DC5ECEC0024DA80 /* adx2_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2321DC5ECEC0024DA80 /* adx2_en@2x.png */; };
 		4CD4EFA51D8D6C830014C99F /* MotherSleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFA41D8D6C830014C99F /* MotherSleepTests.m */; };
 		4CD4EFB01D8D6C830014C99F /* MotherSleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFAF1D8D6C830014C99F /* MotherSleepUITests.m */; };
 		4CD4F01A1D8D6D060014C99F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4EFBF1D8D6D060014C99F /* AppDelegate.m */; };
@@ -93,6 +94,7 @@
 		4CC8F22D1DC4D35B0024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		4CC8F22E1DC4D35B0024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4CC8F22F1DC4D35B0024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4CC8F2321DC5ECEC0024DA80 /* adx2_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2_en@2x.png"; sourceTree = "<group>"; };
 		4CD4EF871D8D6C830014C99F /* MotherSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotherSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4EFA01D8D6C830014C99F /* MotherSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotherSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4EFA41D8D6C830014C99F /* MotherSleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotherSleepTests.m; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				4CD4EFFB1D8D6D060014C99F /* 6.png */,
 				4CD4EFFC1D8D6D060014C99F /* 7.png */,
 				4CD4EFFD1D8D6D060014C99F /* adx2@2x.png */,
+				4CC8F2321DC5ECEC0024DA80 /* adx2_en@2x.png */,
 				4CD4EFFE1D8D6D060014C99F /* icon120.png */,
 				4CD4EFFF1D8D6D060014C99F /* slide_disable@2x.png */,
 				4CD4F0001D8D6D060014C99F /* slide_enable@2x.png */,
@@ -547,6 +550,7 @@
 				4CD4F0421D8D6D060014C99F /* icon120.png in Resources */,
 				4CC8F2271DC47E290024DA80 /* iPhone6Plus@2x.png in Resources */,
 				4CD4F0391D8D6D060014C99F /* ywgh.mp3 in Resources */,
+				4CC8F2331DC5ECEC0024DA80 /* adx2_en@2x.png in Resources */,
 				4CD4F02D1D8D6D060014C99F /* 华康圆体W5.TTF in Resources */,
 				4CC8F22A1DC4D33D0024DA80 /* LaunchScreen.storyboard in Resources */,
 				4CD4F0441D8D6D060014C99F /* slide_enable@2x.png in Resources */,
