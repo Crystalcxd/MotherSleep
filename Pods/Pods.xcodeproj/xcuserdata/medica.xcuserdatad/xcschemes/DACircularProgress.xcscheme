@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D1BEAFB8893451FE10948B8AECDA7578'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = 'C791F0A928C1A8FE97074DFC9ACF4E75'
+               BlueprintName = 'DACircularProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libDACircularProgress.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

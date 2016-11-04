@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D1BEAFB8893451FE10948B8AECDA7578'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = 'FA5945ABD55B9176583F8846C27DD373'
+               BlueprintName = 'TTTAttributedLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libTTTAttributedLabel.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

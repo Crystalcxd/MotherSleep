@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D1BEAFB8893451FE10948B8AECDA7578'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = 'D6313E425A198FBCBDCD10382E575168'
+               BlueprintName = 'RegexKitLite'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libRegexKitLite.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

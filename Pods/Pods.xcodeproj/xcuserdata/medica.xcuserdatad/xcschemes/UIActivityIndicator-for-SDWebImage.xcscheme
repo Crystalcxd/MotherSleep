@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D1BEAFB8893451FE10948B8AECDA7578'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = 'B0CCF329B21D4375680E134E93FD4E0D'
+               BlueprintName = 'UIActivityIndicator-for-SDWebImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libUIActivityIndicator-for-SDWebImage.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

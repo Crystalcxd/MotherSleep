@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D1BEAFB8893451FE10948B8AECDA7578'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = '5253F8E3D58446D3248CCF68D686CCCE'
+               BlueprintName = 'UITableView+FDTemplateLayoutCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libUITableView+FDTemplateLayoutCell.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

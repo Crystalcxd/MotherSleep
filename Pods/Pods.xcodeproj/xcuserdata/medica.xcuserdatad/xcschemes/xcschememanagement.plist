@@ -6,107 +6,121 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DateTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>ELCImagePickerController.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GBDeviceInfo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GVUserDefaults.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>HMSegmentedControl.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>HappyDNS.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-MotherSleep.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Qiniu.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RDVTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RegexKitLite.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SlackTextViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TTTAttributedLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIActivityIndicator-for-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WebViewJavascriptBridge.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>2AB49797D14D57FA43A345254AFB9F18</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>403D976E2DC3202C90F466D0512EF264</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5274848432142B064787A7B27709C558</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>859BCFC6B3FF26CF5B1CB32BAC63C183</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A52B4DA9D3708AB5DD8579CB683A09E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8F74D9EA91F4C43190670066BAC37D44</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CC0C36774C9EBFC75B1667786BCA8B07</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D0EA7BD0DF7B64D1D22AE99C93B3613D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
