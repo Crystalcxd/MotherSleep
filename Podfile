@@ -24,18 +24,22 @@ pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 
-# Helper/Tool
-pod 'GBDeviceInfo' # 设备信息
-
 # Vendor
 pod 'WeChat_SDK', '~> 1.7.2.1'
 pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
+pod 'JPush', '~> 2.1.9'
 pod 'RegexKitLite', '~> 4.0' #正则
 pod 'Masonry', '~> 1.0.2'   #代码布局
 pod 'WebViewJavascriptBridge', '~> 5.0.5'
 pod 'GVUserDefaults', '~> 1.0.2'
-pod 'DateTools', '~> 1.7.0'
+
+# Helper/Tool
+pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
+pod 'DateTools' # 日期时间工具
+pod 'GBDeviceInfo' # 设备信息
+pod 'Valet' # keychain
+pod 'pop'
 
 end

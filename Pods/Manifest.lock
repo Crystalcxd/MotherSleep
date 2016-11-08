@@ -23,13 +23,15 @@ PODS:
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
+  - JPush (2.1.9)
   - Mantle (1.5.8):
     - Mantle/extobjc (= 1.5.8)
   - Mantle/extobjc (1.5.8)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (2.5.0)
-  - Qiniu (7.1.2):
+  - pop (1.0.9)
+  - Qiniu (7.1.4):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
@@ -43,6 +45,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.3)
+  - Valet (2.2.3)
   - WebViewJavascriptBridge (5.0.5)
   - WeChat_SDK (1.7.2.1)
   - WeiboSDK (3.1.3)
@@ -51,15 +54,17 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - DACircularProgress
-  - DateTools (~> 1.7.0)
+  - DateTools
   - ELCImagePickerController (~> 0.2.0)
   - GBDeviceInfo
   - GVUserDefaults (~> 1.0.2)
   - HMSegmentedControl
+  - JPush (~> 2.1.9)
   - Mantle (~> 1.5.0)
   - Masonry (~> 1.0.2)
   - MBProgressHUD
   - MJRefresh (~> 2.0)
+  - pop
   - Qiniu
   - RDVTabBarController (~> 1.1.9)
   - RegexKitLite (~> 4.0)
@@ -69,6 +74,7 @@ DEPENDENCIES:
   - UIActivityIndicator-for-SDWebImage
   - UITableView+FDTemplateLayoutCell (= 1.3)
   - UMengAnalytics-NO-IDFA
+  - Valet
   - WebViewJavascriptBridge (~> 5.0.5)
   - WeChat_SDK (~> 1.7.2.1)
   - WeiboSDK
@@ -83,11 +89,13 @@ SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  JPush: 8bccf709ace4318a8e7008cc4fab42b706bfad46
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
-  Qiniu: d57cb922b5c31f0d1cfe2c8fea3cf83997cdcf62
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -96,11 +104,12 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: b26a7003458204d4549b6bd132c2f07dd5942b86
+  Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 60f54c285633cc0343262d31122d4ffa6702eece
+PODFILE CHECKSUM: 5d8e6194111468b8313228b751ff2ac484161586
 
 COCOAPODS: 1.1.1

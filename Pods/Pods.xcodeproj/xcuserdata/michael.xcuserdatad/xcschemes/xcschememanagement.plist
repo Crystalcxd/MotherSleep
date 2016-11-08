@@ -109,6 +109,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Valet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>WebViewJavascriptBridge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -119,124 +124,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>21CEE727155B51C83FF9BF5C5EDADBD3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>325E0F928F4D0842ECDF259F63F1D842</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>496643A0C6647A237EA495B023CFA1A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5253F8E3D58446D3248CCF68D686CCCE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>53B2B897D64E4516E75AC86348B86622</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>661E71AE1F138D45235ABEF286CA7AED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6E66B362AE57238557E51E1B585B5C93</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>76EE6943B92E3C0C983824D83BDFF9A1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7DF68AF3B6BEB785886D7CF10706AA75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A690E4D6AFDC16355243C7AFD3BBFEA9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B0222114B12E9AE7E8DF26FF0078CDF5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B0CCF329B21D4375680E134E93FD4E0D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B2CB6F1560E91F47D0B3B50DA24D0EA4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B36F6D48026E14827529F787D63D61B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C91E7D58CE838D214A807F6D6E5FD011</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D07D474B199FBF6F1E9C0D84C2ACDDEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D1BEAFB8893451FE10948B8AECDA7578</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6313E425A198FBCBDCD10382E575168</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA5945ABD55B9176583F8846C27DD373</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
