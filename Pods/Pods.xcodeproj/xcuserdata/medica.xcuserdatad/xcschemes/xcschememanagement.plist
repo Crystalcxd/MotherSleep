@@ -109,12 +109,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Valet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>WebViewJavascriptBridge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
