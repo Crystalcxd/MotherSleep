@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		306D8A7195E0202CD369404B /* libPods-MotherSleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488B8373BBCB1315C1D6280 /* libPods-MotherSleep.a */; };
+		4C6C334D1DD716060008BEAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C334B1DD716060008BEAE /* LaunchScreen.storyboard */; };
+		4C6C33521DD7192C0008BEAE /* adx2_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C33511DD7192C0008BEAE /* adx2_en@2x.png */; };
 		4CABD0B41DBE529900FF62C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0B61DBE529900FF62C2 /* Localizable.strings */; };
 		4CABD0BA1DBE535A00FF62C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */; };
 		4CC8F2251DC47DF40024DA80 /* iPhone6Plus_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2241DC47DF40024DA80 /* iPhone6Plus_en@2x.png */; };
@@ -84,10 +86,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C6C334C1DD716060008BEAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C6C334E1DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4C6C334F1DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4C6C33501DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		4C6C33511DD7192C0008BEAE /* adx2_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2_en@2x.png"; sourceTree = "<group>"; };
 		4CABD0B51DBE529900FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4CABD0B71DBE52A400FF62C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4CABD0BB1DBE535A00FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CABD0BD1DBE535C00FF62C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4CC8F2241DC47DF40024DA80 /* iPhone6Plus_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus_en@2x.png"; sourceTree = "<group>"; };
 		4CC8F2261DC47E290024DA80 /* iPhone6Plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus@2x.png"; sourceTree = "<group>"; };
 		4CD4EF871D8D6C830014C99F /* MotherSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotherSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +348,7 @@
 				4CD4EFF51D8D6D060014C99F /* pic */,
 				4CABD0B61DBE529900FF62C2 /* Localizable.strings */,
 				4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */,
+				4C6C334B1DD716060008BEAE /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				4CD4EFFB1D8D6D060014C99F /* 6.png */,
 				4CD4EFFC1D8D6D060014C99F /* 7.png */,
 				4CD4EFFD1D8D6D060014C99F /* adx2@2x.png */,
+				4C6C33511DD7192C0008BEAE /* adx2_en@2x.png */,
 				4CD4EFFE1D8D6D060014C99F /* icon120.png */,
 				4CD4EFFF1D8D6D060014C99F /* slide_disable@2x.png */,
 				4CD4F0001D8D6D060014C99F /* slide_enable@2x.png */,
@@ -543,7 +550,9 @@
 				4CD4F0421D8D6D060014C99F /* icon120.png in Resources */,
 				4CC8F2271DC47E290024DA80 /* iPhone6Plus@2x.png in Resources */,
 				4CD4F0391D8D6D060014C99F /* ywgh.mp3 in Resources */,
+				4C6C33521DD7192C0008BEAE /* adx2_en@2x.png in Resources */,
 				4CD4F02D1D8D6D060014C99F /* 华康圆体W5.TTF in Resources */,
+				4C6C334D1DD716060008BEAE /* LaunchScreen.storyboard in Resources */,
 				4CD4F0441D8D6D060014C99F /* slide_enable@2x.png in Resources */,
 				4CD4F0351D8D6D060014C99F /* xjnm.mp3 in Resources */,
 				4CD4F03F1D8D6D060014C99F /* 6.png in Resources */,
@@ -696,11 +705,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4C6C334B1DD716060008BEAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6C334C1DD716060008BEAE /* en */,
+				4C6C33501DD7162E0008BEAE /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		4CABD0B61DBE529900FF62C2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4CABD0B51DBE529900FF62C2 /* en */,
-				4CABD0B71DBE52A400FF62C2 /* zh-Hans */,
+				4C6C334E1DD7162E0008BEAE /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -709,7 +727,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CABD0BB1DBE535A00FF62C2 /* en */,
-				4CABD0BD1DBE535C00FF62C2 /* zh-Hans */,
+				4C6C334F1DD7162E0008BEAE /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

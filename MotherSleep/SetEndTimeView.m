@@ -45,7 +45,7 @@
         [self.boardView addSubview:cancelBtn];
         
         UIButton *confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        confirmBtn.frame = CGRectMake(SCREENWIDTH - 65, 0, 65, 40);
+        confirmBtn.frame = CGRectMake(SCREENWIDTH - 70, 0, 70, 40);
         [confirmBtn setTitle:NSLocalizedString(@"Comfirm", nil) forState:UIControlStateNormal];
         [confirmBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [confirmBtn addTarget:self action:@selector(confirmEndTime) forControlEvents:UIControlEventTouchUpInside];

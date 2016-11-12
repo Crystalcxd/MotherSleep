@@ -78,4 +78,7 @@ NSUInteger DeviceSystemMajorVersion();
 /** 是否静音模式 */
 
 +(BOOL)silenced;
+
++(BOOL)ifChinese;
+
 @end

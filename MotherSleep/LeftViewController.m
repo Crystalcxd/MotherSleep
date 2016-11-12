@@ -40,13 +40,24 @@
     [self.view addSubview:topView];
     
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 72, 39)];
-    titleView.image = [UIImage imageNamed:@"momsleep_menu"];
+    titleView.image = [UIImage imageNamed:NSLocalizedString(@"momsleep_white", nil)];
     [self.view addSubview:titleView];
         
-    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"advice", nil];
-    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"suggest_touch",nil];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"sleeping music", nil),NSLocalizedString(@"YourAdvice", nil), nil];
-    
+    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
+    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"sleeping music", nil),NSLocalizedString(@"Share", nil),NSLocalizedString(@"YourAdvice", nil), nil];
+
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+
+    if (![currentLanguage containsString:@"zh"]) {
+        [imageArr removeObjectAtIndex:1];
+        [selectImageArr removeObjectAtIndex:1];
+        [titleArr removeObjectAtIndex:1];
+        
+        titleView.frame = CGRectMake(39 + leftPadding, 38, 105, 38);
+    }
+
 //    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
 //    if (!wxInstalled) {
 //        [imageArr removeObjectAtIndex:1];
@@ -96,7 +107,7 @@
     [btn setTitleColor:HexRGB(0xF8D6FF) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    [self.view addSubview:btn];
 }
 
 - (void)btnAction:(id)sender
@@ -108,7 +119,14 @@
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        [self sendMail];
+        NSArray *languages = [NSLocale preferredLanguages];
+        NSString *currentLanguage = [languages objectAtIndex:0];
+        
+        if (![currentLanguage containsString:@"zh"]) {
+            [self sendMail];
+        }else{
+            [self goShareView];
+        }
     }else{
         [self sendMail];
     }
