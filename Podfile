@@ -36,7 +36,8 @@ pod 'WebViewJavascriptBridge', '~> 5.0.5'
 pod 'GVUserDefaults', '~> 1.0.2'
 
 # Helper/Tool
-pod 'DateTools', '~> 1.7.0'
+pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
+pod 'DateTools' # 日期时间工具
 pod 'GBDeviceInfo' # 设备信息
 pod 'Valet' # keychain
 pod 'pop'

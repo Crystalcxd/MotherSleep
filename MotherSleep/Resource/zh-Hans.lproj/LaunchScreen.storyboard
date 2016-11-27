@@ -21,7 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone6Plus_en.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-MY-HRf">
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone6Plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-MY-HRf">
+>>>>>>> MotherSleep
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
@@ -40,6 +44,10 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="iPhone6Plus_en.png" width="414" height="736"/>
+=======
+        <image name="iPhone6Plus.png" width="414" height="736"/>
+>>>>>>> MotherSleep
     </resources>
 </document>
