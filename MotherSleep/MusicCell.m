@@ -26,7 +26,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         self.musicTitle = [[UILabel alloc] initWithFrame:CGRectMake(29, 0, 200, 82)];
-        self.musicTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:17];
+        self.musicTitle.font = [UIFont fontWithName:@"PingFang" size:17];
         self.musicTitle.textColor = HexRGB(0xD0D0D0);
         [self addSubview:self.musicTitle];
         
