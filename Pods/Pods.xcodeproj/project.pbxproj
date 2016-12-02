@@ -752,6 +752,7 @@
 		2AAF457440393464CE0A8D8BDB16388B /* HappyDNS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HappyDNS-prefix.pch"; sourceTree = "<group>"; };
 		2ADEB0F29C317FC78BC3B4A60DE882C8 /* SlackTextViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackTextViewController-dummy.m"; sourceTree = "<group>"; };
 		2B5A79D8EE4821103E63325B920D3EAB /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		2C857B497228C49E41E3C20BB3E8F46C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.5/UMMobClick.framework"; sourceTree = "<group>"; };
 		2CA84EDB1D1117A9E74697B827FC48B6 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		2CC455A4A14B1FD65248B38FFB9970B1 /* QNCrc32.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNCrc32.m; path = QiniuSDK/Common/QNCrc32.m; sourceTree = "<group>"; };
 		2CD761F8FBAFD9D3E01112E97D7122FE /* SlackTextViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlackTextViewController.xcconfig; sourceTree = "<group>"; };
@@ -991,7 +992,6 @@
 		91760AA94C7911573ECE47BA05084A2D /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		91EF91E20B28AF8AADA9E2044F19F89F /* QNAssessment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNAssessment.h; path = HappyDNS/Assessment/QNAssessment.h; sourceTree = "<group>"; };
 		920E1205551A5304B8AB51957951C88F /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		92748052ECE1B320E4E5011EE07A2AD6 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.3/UMMobClick.framework"; sourceTree = "<group>"; };
 		92D2A487046F316B6CB2A8F9CC97744D /* libRegexKitLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRegexKitLite.a; path = libRegexKitLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D6E1474AC688A3206DADDFFFE7A2B8 /* libHappyDNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHappyDNS.a; path = libHappyDNS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DBC75AAEAC205BA16034ACDB0F0B45 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
@@ -1642,6 +1642,14 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		2A8EDCA4832BDD986A5C6D92BCE3BDB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C857B497228C49E41E3C20BB3E8F46C /* UMMobClick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D4B812AB680B38CFB0DA61D9AF7E1BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1974,7 +1982,7 @@
 		83166A380FCAF48B5D37FBE1897D7267 /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				93BF27AA7A57F1710A0A4F0561E58B78 /* Frameworks */,
+				2A8EDCA4832BDD986A5C6D92BCE3BDB1 /* Frameworks */,
 			);
 			name = "UMengAnalytics-NO-IDFA";
 			path = "UMengAnalytics-NO-IDFA";
@@ -2060,14 +2068,6 @@
 			);
 			name = HappyDNS;
 			path = HappyDNS;
-			sourceTree = "<group>";
-		};
-		93BF27AA7A57F1710A0A4F0561E58B78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				92748052ECE1B320E4E5011EE07A2AD6 /* UMMobClick.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		95DC4889DB948867953C3420182AEF75 /* AFNetworking */ = {
