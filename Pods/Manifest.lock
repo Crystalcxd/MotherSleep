@@ -54,7 +54,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - DACircularProgress
-  - DateTools (~> 1.7.0)
+  - DateTools
   - ELCImagePickerController (~> 0.2.0)
   - GBDeviceInfo
   - GVUserDefaults (~> 1.0.2)
@@ -110,6 +110,6 @@ SPEC CHECKSUMS:
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f99d963422bc223396c017770a298b3e055eb452
+PODFILE CHECKSUM: 5d8e6194111468b8313228b751ff2ac484161586
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1
