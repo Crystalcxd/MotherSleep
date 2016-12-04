@@ -85,7 +85,9 @@
 #pragma mark -
 #pragma mark Public Methods
 
++ (MMPDeepSleepPreventer *)sharedSingleton;
 - (void)startPreventSleep;
 - (void)stopPreventSleep;
+- (void)mmp_playPreventSleepSound;
 
 @end

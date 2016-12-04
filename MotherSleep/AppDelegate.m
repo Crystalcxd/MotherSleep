@@ -76,9 +76,9 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     [MobClick setAppVersion:version];
 
     //增强后台运行
-    MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];
+    MMPDeepSleepPreventer *niceSleep = [MMPDeepSleepPreventer sharedSingleton];
     [niceSleep startPreventSleep];
-
+    
     return YES;
 }
 
@@ -104,6 +104,10 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents]; // 让后台可以处理多媒体的事件
+
+    [[MMPDeepSleepPreventer sharedSingleton] mmp_playPreventSleepSound];
+
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }

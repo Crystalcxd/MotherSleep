@@ -200,7 +200,7 @@ static AudioTask *audioTask;
     };
     bgTask = [app beginBackgroundTaskWithExpirationHandler:expirationHandler];
     
-    [self jhh_setUpAudioSession];
+//    [self jhh_setUpAudioSession];
 
     dispatch_async(dispatch_get_main_queue(), ^{
         
@@ -253,16 +253,16 @@ static AudioTask *audioTask;
     if(player != nil && [player isPlaying])
     {
         [player stop];
-        player = nil;
+//        player = nil;
         
         isPlaying = NO;
     }
     
-    if(bgTask != UIBackgroundTaskInvalid)
-    {
-        [[UIApplication sharedApplication] endBackgroundTask:bgTask];
-        bgTask=UIBackgroundTaskInvalid;
-    }
+//    if(bgTask != UIBackgroundTaskInvalid)
+//    {
+//        [[UIApplication sharedApplication] endBackgroundTask:bgTask];
+//        bgTask=UIBackgroundTaskInvalid;
+//    }
 }
 
 - (void)setVolumToZero:(BOOL)flag
@@ -385,7 +385,7 @@ static AudioTask *audioTask;
     //区分前台后台,否则总有一种情况调不起音频,原因未知
     if([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
-        [self jhh_setUpAudioSession];
+//        [self jhh_setUpAudioSession];
         //后台
         if (isPlaying) {
 //            [player play];
@@ -403,7 +403,7 @@ static AudioTask *audioTask;
     
     if([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
-        [self jhh_setUpAudioSession];
+//        [self jhh_setUpAudioSession];
         //后台
         if (isPlaying) {
 //            [player play];
