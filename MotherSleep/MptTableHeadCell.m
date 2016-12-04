@@ -38,4 +38,8 @@
     
 }
 
+- (void)imageViewAnimation{
+    
+}
+
 @end

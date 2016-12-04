@@ -83,7 +83,7 @@ typedef enum
 /**
  *  设置当前播放音量
  *
- *  @param volume --
+ *  @param volum --
  */
 - (void)setPlayVolum:(CGFloat)volum;
 /**

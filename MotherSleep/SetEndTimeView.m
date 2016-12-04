@@ -114,13 +114,13 @@
     
     self.currentDate = [sender date];
     
-    NSDate *select = [sender date]; // 获取被选中的时间
+//    NSDate *select = [sender date]; // 获取被选中的时间
     NSDateFormatter *selectDateFormatter = [[NSDateFormatter alloc] init];
     selectDateFormatter.dateFormat = @"yy:MM:dd HH:mm:ss"; // 设置时间和日期的格式
-    NSString *dateAndTime = [selectDateFormatter stringFromDate:select]; // 把date类型转为设置好格式的string类型
+//    NSString *dateAndTime = [selectDateFormatter stringFromDate:select]; // 把date类型转为设置好格式的string类型
     
     // 通过UIAlertView显示出来
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"时间提示" message:dateAndTime delegate:select cancelButtonTitle:@"Cancle" otherButtonTitles:nil, nil];
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"时间提示" message:dateAndTime delegate:select cancelButtonTitle:@"Cancle" otherButtonTitles:nil, nil];
 //    [alertView show];
     
     // 在控制台打印消息

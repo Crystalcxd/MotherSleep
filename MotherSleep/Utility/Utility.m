@@ -71,12 +71,12 @@ NSUInteger DeviceSystemMajorVersion(){
     NSInteger distance = currenttime - time;
     
     if (distance/(length) >= 1) {
-        dateString = [NSString stringWithFormat:@"%d年前",distance/length];
+        dateString = [NSString stringWithFormat:@"%ld年前",distance/length];
         return dateString;
     }
     length = length/12;
     if (distance/(length) >= 1) {
-        dateString = [NSString stringWithFormat:@"%d个月前",distance/length];
+        dateString = [NSString stringWithFormat:@"%ld个月前",distance/length];
         return dateString;
     }
     length = length/30;
@@ -85,18 +85,18 @@ NSUInteger DeviceSystemMajorVersion(){
             dateString = @"昨天";
             return dateString;
         }else{
-            dateString = [NSString stringWithFormat:@"%d天前",distance/length];
+            dateString = [NSString stringWithFormat:@"%ld天前",distance/length];
             return dateString;
         }
     }
     length = length/24;
     if (distance/(length) >= 1) {
-        dateString = [NSString stringWithFormat:@"%d小时前",distance/length];
+        dateString = [NSString stringWithFormat:@"%ld小时前",distance/length];
         return dateString;
     }
     length = length/60;
     if (distance/(length) >= 1) {
-        dateString = [NSString stringWithFormat:@"%d分钟前",distance/length];
+        dateString = [NSString stringWithFormat:@"%ld分钟前",distance/length];
         return dateString;
     }else
         return @"刚刚";

@@ -26,5 +26,6 @@
 - (void)viewWillDisappear;
 - (void)viewDidDisappear;
 
+- (void)imageViewAnimation;
 
 @end

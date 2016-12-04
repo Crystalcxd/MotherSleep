@@ -32,6 +32,19 @@
     return self;
 }
 
+- (void)imageViewAnimation
+{
+    [UIView animateWithDuration:0.2 animations:^{
+        self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142 - 20, 20, 284, 230);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142, 0, 284, 230);
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

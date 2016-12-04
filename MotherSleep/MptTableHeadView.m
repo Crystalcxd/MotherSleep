@@ -352,6 +352,9 @@
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     NSLog(@"page ==== %ld",_curPage);
+    for (MptTableHeadCell *view in self.onScreenCells) {
+        [view imageViewAnimation];
+    }
     if (self.pageControl.currentPage != _curPage) {
         if ([_delegate respondsToSelector:@selector(tableHeadView:didScrollToIndex:)]) {
             [_delegate tableHeadView:self didScrollToIndex:_curPage];
