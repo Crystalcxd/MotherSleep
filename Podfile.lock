@@ -30,6 +30,7 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (2.5.0)
+  - MOBFoundation (2.2.3)
   - pop (1.0.9)
   - Qiniu (7.1.4):
     - AFNetworking (~> 3)
@@ -39,6 +40,10 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - ShareSDK3 (3.5.2):
+    - ShareSDK3/ShareSDK (= 3.5.2)
+  - ShareSDK3/ShareSDK (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.2)
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -64,11 +69,14 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - MBProgressHUD
   - MJRefresh (~> 2.0)
+  - MOBFoundation (~> 2.2.3)
   - pop
   - Qiniu
   - RDVTabBarController (~> 1.1.9)
   - RegexKitLite (~> 4.0)
   - SDWebImage
+  - ShareSDK3 (~> 3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/Facebook
   - SlackTextViewController
   - TTTAttributedLabel (~> 2.0.0)
   - UIActivityIndicator-for-SDWebImage
@@ -94,11 +102,13 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
+  MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
@@ -110,6 +120,6 @@ SPEC CHECKSUMS:
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 5d8e6194111468b8313228b751ff2ac484161586
+PODFILE CHECKSUM: 7a0395c8630455cc4790d0623e94838fbf03068e
 
 COCOAPODS: 1.1.1

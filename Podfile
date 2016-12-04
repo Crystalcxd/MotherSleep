@@ -34,6 +34,9 @@ pod 'RegexKitLite', '~> 4.0' #正则
 pod 'Masonry', '~> 1.0.2'   #代码布局
 pod 'WebViewJavascriptBridge', '~> 5.0.5'
 pod 'GVUserDefaults', '~> 1.0.2'
+pod 'ShareSDK3', '~> 3.5.2'
+pod 'ShareSDK3/ShareSDKPlatforms/Facebook'
+pod 'MOBFoundation', '~> 2.2.3'
 
 # Helper/Tool
 pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度

@@ -81,6 +81,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay.png"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
   install_resource "WeiboSDK/libWeiboSDK/WeiboSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -91,6 +92,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay.png"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
   install_resource "WeiboSDK/libWeiboSDK/WeiboSDK.bundle"
 fi
 
