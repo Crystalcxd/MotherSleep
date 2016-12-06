@@ -36,6 +36,7 @@ pod 'WebViewJavascriptBridge', '~> 5.0.5'
 pod 'GVUserDefaults', '~> 1.0.2'
 pod 'ShareSDK3', '~> 3.5.2'
 pod 'ShareSDK3/ShareSDKPlatforms/Facebook'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ’
 pod 'MOBFoundation', '~> 2.2.3'
 
 # Helper/Tool
