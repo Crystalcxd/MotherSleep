@@ -14,9 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
   - DACircularProgress (2.3.1)
   - DateTools (1.7.0)
   - ELCImagePickerController (0.2.0)
+  - Fabric (1.6.11)
   - GBDeviceInfo (4.2.2):
     - GBDeviceInfo/Core (= 4.2.2)
   - GBDeviceInfo/Core (4.2.2)
@@ -29,6 +39,7 @@ PODS:
   - Mantle/extobjc (1.5.8)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
+  - MiPushSDK (2.2.4)
   - MJRefresh (2.5.0)
   - MOBFoundation (2.2.3)
   - pop (1.0.9)
@@ -37,6 +48,7 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
+  - SCLAlertView-Objective-C (1.1.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -45,6 +57,8 @@ PODS:
   - ShareSDK3/ShareSDK (3.5.2)
   - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.2)
   - ShareSDK3/ShareSDKPlatforms/QQ (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.2)
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -53,15 +67,16 @@ PODS:
   - UMengAnalytics-NO-IDFA (4.1.5)
   - Valet (2.2.3)
   - WebViewJavascriptBridge (5.0.5)
-  - WeChat_SDK (1.7.2.1)
-  - WeiboSDK (3.1.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - CocoaAsyncSocket (~> 7.4.3)
+  - Crashlytics
   - DACircularProgress
   - DateTools
   - ELCImagePickerController (~> 0.2.0)
+  - Fabric
   - GBDeviceInfo
   - GVUserDefaults (~> 1.0.2)
   - HMSegmentedControl
@@ -69,16 +84,20 @@ DEPENDENCIES:
   - Mantle (~> 1.5.0)
   - Masonry (~> 1.0.2)
   - MBProgressHUD
+  - MiPushSDK (~> 2.2.4)
   - MJRefresh (~> 2.0)
   - MOBFoundation (~> 2.2.3)
   - pop
   - Qiniu
   - RDVTabBarController (~> 1.1.9)
   - RegexKitLite (~> 4.0)
+  - SCLAlertView-Objective-C
   - SDWebImage
   - ShareSDK3 (~> 3.5.2)
   - ShareSDK3/ShareSDKPlatforms/Facebook
   - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
   - SlackTextViewController
   - TTTAttributedLabel (~> 2.0.0)
   - UIActivityIndicator-for-SDWebImage
@@ -86,15 +105,16 @@ DEPENDENCIES:
   - UMengAnalytics-NO-IDFA
   - Valet
   - WebViewJavascriptBridge (~> 5.0.5)
-  - WeChat_SDK (~> 1.7.2.1)
-  - WeiboSDK
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   GBDeviceInfo: 0a6e2fc04989ce248572bb988f1a764102eb0e5d
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
@@ -103,12 +123,14 @@ SPEC CHECKSUMS:
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
   MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
@@ -118,10 +140,8 @@ SPEC CHECKSUMS:
   UMengAnalytics-NO-IDFA: f1b08b540eba6ebad044a574cae6d988cf40cfda
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
-  WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
-  WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 947c1209f6fbf919c5db5cfa22e29aa8c74a433f
+PODFILE CHECKSUM: 8480a5f17504f6964619ab79c5c4330fabefa935
 
 COCOAPODS: 1.2.0.beta.1
