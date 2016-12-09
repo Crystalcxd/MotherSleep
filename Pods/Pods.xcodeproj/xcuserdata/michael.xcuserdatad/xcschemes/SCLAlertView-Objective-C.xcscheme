@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C9022F36B81FFE7AE8EBB31D526CD650'
-               BlueprintName = 'Pods-MotherSleep'
+               BlueprintIdentifier = '0BCA15550873E008691358705CCC50AD'
+               BlueprintName = 'SCLAlertView-Objective-C'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-MotherSleep.a'>
+               BuildableName = 'libSCLAlertView-Objective-C.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
