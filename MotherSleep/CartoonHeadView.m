@@ -34,13 +34,17 @@
 
 - (void)imageViewAnimation
 {
-    [UIView animateWithDuration:0.2 animations:^{
-        self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142 - 20, 20, 284, 230);
+    [UIView animateWithDuration:0.8 animations:^{
+        self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142 - 15, 5, 284, 230);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2 animations:^{
-            self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142, 0, 284, 230);
+        [UIView animateWithDuration:1.6 animations:^{
+            self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142 + 20, -15, 284, 230);
         } completion:^(BOOL finished) {
-            
+            [UIView animateWithDuration:1.6 animations:^{
+                self.imageView.frame = CGRectMake(SCREENWIDTH * 0.5 - 142, 0, 284, 230);
+            } completion:^(BOOL finished) {
+                
+            }];
         }];
     }];
 }
