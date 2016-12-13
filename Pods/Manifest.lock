@@ -33,11 +33,7 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (2.5.0)
-<<<<<<< HEAD
   - MOBFoundation (2.2.11)
-=======
-  - MOBFoundation (2.2.10)
->>>>>>> origin/master
   - pop (1.0.9)
   - Qiniu (7.1.4):
     - AFNetworking (~> 3)
@@ -117,11 +113,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
-<<<<<<< HEAD
   MOBFoundation: 170a1b551023123590c349c491584d0d081ad5d5
-=======
-  MOBFoundation: 3cca6f267be8ea7643be0d27ec871b66b64e32fd
->>>>>>> origin/master
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -140,4 +132,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 23547efb46c5b03639bade3887f250267a8c3670
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1

@@ -11,6 +11,7 @@
 #import "WXApi.h"
 
 #define WXAppId @"wxead019165d8d0b56"
+#define WXAppSecret @"c90aa35d891147648fde0a4a03c632c4"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>
 

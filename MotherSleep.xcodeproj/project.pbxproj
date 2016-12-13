@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		306D8A7195E0202CD369404B /* libPods-MotherSleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488B8373BBCB1315C1D6280 /* libPods-MotherSleep.a */; };
-		4C6C334D1DD716060008BEAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C334B1DD716060008BEAE /* LaunchScreen.storyboard */; };
-		4C6C33521DD7192C0008BEAE /* adx2_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C33511DD7192C0008BEAE /* adx2_en@2x.png */; };
 		4CABD0B41DBE529900FF62C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0B61DBE529900FF62C2 /* Localizable.strings */; };
 		4CABD0BA1DBE535A00FF62C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0BC1DBE535A00FF62C2 /* InfoPlist.strings */; };
 		4CC8F2251DC47DF40024DA80 /* iPhone6Plus_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2241DC47DF40024DA80 /* iPhone6Plus_en@2x.png */; };
@@ -89,10 +87,7 @@
 
 /* Begin PBXFileReference section */
 		4C6C334C1DD716060008BEAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C6C334E1DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		4C6C334F1DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4C6C33501DD7162E0008BEAE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		4C6C33511DD7192C0008BEAE /* adx2_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2_en@2x.png"; sourceTree = "<group>"; };
 		4CABD0B51DBE529900FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CABD0BB1DBE535A00FF62C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CC8F2241DC47DF40024DA80 /* iPhone6Plus_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus_en@2x.png"; sourceTree = "<group>"; };

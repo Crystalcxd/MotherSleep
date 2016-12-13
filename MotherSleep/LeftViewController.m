@@ -47,13 +47,10 @@
     NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
     NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"sleeping music", nil),NSLocalizedString(@"Share", nil),NSLocalizedString(@"YourAdvice", nil), nil];
 
-    NSArray *languages = [NSLocale preferredLanguages];
-    NSString *currentLanguage = [languages objectAtIndex:0];
-
-    if (![currentLanguage containsString:@"zh"]) {
-        [imageArr removeObjectAtIndex:1];
-        [selectImageArr removeObjectAtIndex:1];
-        [titleArr removeObjectAtIndex:1];
+    if (![Utility ifChinese]) {
+//        [imageArr removeObjectAtIndex:1];
+//        [selectImageArr removeObjectAtIndex:1];
+//        [titleArr removeObjectAtIndex:1];
         
         titleView.frame = CGRectMake(39 + leftPadding, 38, 105, 38);
     }
@@ -119,14 +116,7 @@
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        NSArray *languages = [NSLocale preferredLanguages];
-        NSString *currentLanguage = [languages objectAtIndex:0];
-        
-        if (![currentLanguage containsString:@"zh"]) {
-            [self sendMail];
-        }else{
-            [self goShareView];
-        }
+        [self goShareView];
     }else{
         [self sendMail];
     }
