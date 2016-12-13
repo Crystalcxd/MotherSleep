@@ -5,7 +5,6 @@ target 'MotherSleep' do
 # 网络
 pod 'AFNetworking', '~> 3.1.0'
 pod 'SDWebImage'
-pod 'CocoaAsyncSocket', '~> 7.4.3'
 
 # Model
 pod 'Mantle', '~> 1.5.0'
@@ -30,7 +29,6 @@ pod 'SCLAlertView-Objective-C'
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'JPush', '~> 2.1.9'
-pod 'MiPushSDK', '~> 2.2.4'
 pod 'RegexKitLite', '~> 4.0' #正则
 pod 'Masonry', '~> 1.0.2'   #代码布局
 pod 'WebViewJavascriptBridge', '~> 5.0.5'

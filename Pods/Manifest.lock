@@ -14,13 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CocoaAsyncSocket (7.4.3):
-    - CocoaAsyncSocket/All (= 7.4.3)
-  - CocoaAsyncSocket/All (7.4.3):
-    - CocoaAsyncSocket/GCD
-    - CocoaAsyncSocket/RunLoop
-  - CocoaAsyncSocket/GCD (7.4.3)
-  - CocoaAsyncSocket/RunLoop (7.4.3)
   - Crashlytics (3.8.3):
     - Fabric (~> 1.6.3)
   - DACircularProgress (2.3.1)
@@ -39,9 +32,8 @@ PODS:
   - Mantle/extobjc (1.5.8)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
-  - MiPushSDK (2.2.4)
   - MJRefresh (2.5.0)
-  - MOBFoundation (2.2.3)
+  - MOBFoundation (2.2.11)
   - pop (1.0.9)
   - Qiniu (7.1.4):
     - AFNetworking (~> 3)
@@ -64,14 +56,13 @@ PODS:
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.3)
-  - UMengAnalytics-NO-IDFA (4.1.5)
+  - UMengAnalytics-NO-IDFA (4.1.9)
   - Valet (2.2.3)
   - WebViewJavascriptBridge (5.0.5)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - CocoaAsyncSocket (~> 7.4.3)
   - Crashlytics
   - DACircularProgress
   - DateTools
@@ -84,7 +75,6 @@ DEPENDENCIES:
   - Mantle (~> 1.5.0)
   - Masonry (~> 1.0.2)
   - MBProgressHUD
-  - MiPushSDK (~> 2.2.4)
   - MJRefresh (~> 2.0)
   - MOBFoundation (~> 2.2.3)
   - pop
@@ -109,7 +99,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
@@ -123,9 +112,8 @@ SPEC CHECKSUMS:
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
-  MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
+  MOBFoundation: 170a1b551023123590c349c491584d0d081ad5d5
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -137,11 +125,11 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
-  UMengAnalytics-NO-IDFA: f1b08b540eba6ebad044a574cae6d988cf40cfda
+  UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8480a5f17504f6964619ab79c5c4330fabefa935
+PODFILE CHECKSUM: 23547efb46c5b03639bade3887f250267a8c3670
 
 COCOAPODS: 1.1.1
