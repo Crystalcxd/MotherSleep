@@ -58,7 +58,7 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.9)
   - Valet (2.2.3)
-  - WebViewJavascriptBridge (5.0.5)
+  - WebViewJavascriptBridge (5.0.7)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -127,9 +127,9 @@ SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
-  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+  WebViewJavascriptBridge: e4302f8c3988a447ae6e144656eac51f3f0f04c8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 23547efb46c5b03639bade3887f250267a8c3670
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
