@@ -68,11 +68,11 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.1.0)
+  - AFNetworking
   - Crashlytics
   - DACircularProgress
   - DateTools
-  - ELCImagePickerController (~> 0.2.0)
+  - ELCImagePickerController
   - Fabric
   - GBDeviceInfo
   - GVUserDefaults (~> 1.0.2)
@@ -85,7 +85,7 @@ DEPENDENCIES:
   - MOBFoundation (~> 2.2.3)
   - pop
   - Qiniu
-  - RDVTabBarController (~> 1.1.9)
+  - RDVTabBarController
   - RegexKitLite (~> 4.0)
   - SCLAlertView-Objective-C
   - SDWebImage
@@ -136,6 +136,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 74d98b72ff53f75d683ffc7d9b4d1e4102f15a87
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 23547efb46c5b03639bade3887f250267a8c3670
+PODFILE CHECKSUM: 81ab22ed55377ae759f035d4067e352c856fbf87
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1

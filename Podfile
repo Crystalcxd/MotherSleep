@@ -3,7 +3,7 @@ platform :ios, '8.0'
 target 'MotherSleep' do
 
 # 网络
-pod 'AFNetworking', '~> 3.1.0'
+pod 'AFNetworking'
 pod 'SDWebImage'
 
 # Model
@@ -11,8 +11,8 @@ pod 'Mantle', '~> 1.5.0'
 pod 'YYModel', '~> 1.0.4'
 
 # View Controller
-pod 'ELCImagePickerController', '~> 0.2.0'
-pod 'RDVTabBarController', '~> 1.1.9'
+pod 'ELCImagePickerController'
+pod 'RDVTabBarController'
 pod 'SlackTextViewController'
 
 # View
