@@ -26,7 +26,9 @@ PODS:
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
-  - JPush (3.0.0)
+  - JCore (1.1.0)
+  - JPush (3.0.1):
+    - JCore (~> 1.1.0)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -44,18 +46,18 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK3 (3.5.7):
+  - ShareSDK3 (3.6.0):
     - MOBFoundation
-    - ShareSDK3/ShareSDK (= 3.5.7)
-  - ShareSDK3/ShareSDK (3.5.7):
+    - ShareSDK3/ShareSDK (= 3.6.0)
+  - ShareSDK3/ShareSDK (3.6.0):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.7):
+  - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.0):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.7):
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.0):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.7):
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.0):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.7):
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.0):
     - MOBFoundation
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
@@ -64,7 +66,7 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.4)
   - UMengAnalytics-NO-IDFA (4.1.9)
   - Valet (2.2.3)
-  - WebViewJavascriptBridge (6.0.0)
+  - WebViewJavascriptBridge (6.0.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -114,7 +116,8 @@ SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
-  JPush: 042699376efe1d511ef32e0ef1a41deb1b6da123
+  JCore: 7382f2c62e6fcf08305b735e91f0fb771f448d3d
+  JPush: 427daa60236d0faa9f379cd5bbeb923103162058
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -126,14 +129,14 @@ SPEC CHECKSUMS:
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK3: 47f50f8217b9542255c573c8ac4392af1c50b0ed
+  ShareSDK3: f3cf584b1e753cce25535ac8161d0e3557e9b406
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
-  WebViewJavascriptBridge: 72392742054bf655504206b4b9574646cfe9b1e7
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: be01f41958293153f2c426f52db7b039f90c51fd
