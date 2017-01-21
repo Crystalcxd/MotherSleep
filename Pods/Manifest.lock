@@ -65,7 +65,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.4)
   - UMengAnalytics-NO-IDFA (4.1.9)
-  - Valet (2.2.3)
+  - Valet (2.3.0)
   - WebViewJavascriptBridge (6.0.2)
   - YYModel (1.0.4)
 
@@ -135,7 +135,7 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
-  Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
+  Valet: ef076e9bb47353c0d879c8febcd53af4f6e92313
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
