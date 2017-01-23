@@ -64,7 +64,7 @@ PODS:
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.4)
-  - UMengAnalytics-NO-IDFA (4.1.9)
+  - UMengAnalytics-NO-IDFA (4.2.5)
   - Valet (2.3.0)
   - WebViewJavascriptBridge (6.0.2)
   - YYModel (1.0.4)
@@ -134,11 +134,11 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
-  UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   Valet: ef076e9bb47353c0d879c8febcd53af4f6e92313
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: be01f41958293153f2c426f52db7b039f90c51fd
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.rc.1
