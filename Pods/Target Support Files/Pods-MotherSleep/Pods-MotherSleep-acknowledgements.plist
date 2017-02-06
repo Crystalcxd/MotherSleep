@@ -637,6 +637,16 @@ THE SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>小米科技 版权所有.</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>MiPushSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2011-2016 qiniu.com

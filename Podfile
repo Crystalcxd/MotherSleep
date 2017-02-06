@@ -29,6 +29,7 @@ pod 'SCLAlertView-Objective-C'
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'JPush'
+pod 'MiPushSDK'
 pod 'RegexKitLite' #正则
 pod 'Masonry'  #代码布局
 pod 'WebViewJavascriptBridge'
