@@ -26,9 +26,9 @@ PODS:
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
-  - JCore (1.1.0)
-  - JPush (3.0.1):
-    - JCore (~> 1.1.0)
+  - JCore (1.1.1)
+  - JPush (3.0.2):
+    - JCore (= 1.1.1)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -118,8 +118,8 @@ SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
-  JCore: 7382f2c62e6fcf08305b735e91f0fb771f448d3d
-  JPush: 427daa60236d0faa9f379cd5bbeb923103162058
+  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
+  JPush: 5d53c88e32e48b559edc3adb20ade30903a5b9e1
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
