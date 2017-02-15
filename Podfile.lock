@@ -36,7 +36,7 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
-  - MOBFoundation (2.2.13)
+  - MOBFoundation (2.2.15)
   - pop (1.0.9)
   - Qiniu (7.1.5):
     - AFNetworking (~> 3)
@@ -66,7 +66,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.4)
   - UMengAnalytics-NO-IDFA (4.2.5)
-  - Valet (2.3.0)
+  - Valet (2.4.0)
   - WebViewJavascriptBridge (6.0.2)
   - YYModel (1.0.4)
 
@@ -125,7 +125,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  MOBFoundation: 1db1fdc4f1cf9130277cd01f66d6ee7d42a32510
+  MOBFoundation: 4975874f74c991f562151f6a4549e9a6ad743fd8
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -138,7 +138,7 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
-  Valet: ef076e9bb47353c0d879c8febcd53af4f6e92313
+  Valet: e4cbde64b8cbbad4d6610fc10d4473502ba1548e
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
