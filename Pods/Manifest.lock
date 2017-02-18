@@ -43,22 +43,22 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
-  - SCLAlertView-Objective-C (1.1.0)
+  - SCLAlertView-Objective-C (1.1.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK3 (3.6.0):
+  - ShareSDK3 (3.6.1):
     - MOBFoundation
-    - ShareSDK3/ShareSDK (= 3.6.0)
-  - ShareSDK3/ShareSDK (3.6.0):
+    - ShareSDK3/ShareSDK (= 3.6.1)
+  - ShareSDK3/ShareSDK (3.6.1):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.0):
+  - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.1):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.0):
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.1):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.0):
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.1):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.0):
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.1):
     - MOBFoundation
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
@@ -130,9 +130,9 @@ SPEC CHECKSUMS:
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
+  SCLAlertView-Objective-C: d397ae2b52bae7dedf7188fa1616fcb89200b33a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK3: f3cf584b1e753cce25535ac8161d0e3557e9b406
+  ShareSDK3: dea6a14cc4385fa6493e10895ba11d07ef34d149
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
