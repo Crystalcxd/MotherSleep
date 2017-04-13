@@ -26,8 +26,8 @@ PODS:
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
-  - JCore (1.1.1)
-  - JPush (3.0.2):
+  - JCore (1.1.2)
+  - JPush (3.0.3):
     - JCore (~> 1.1.1)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
@@ -43,7 +43,7 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
-  - SCLAlertView-Objective-C (1.1.1)
+  - SCLAlertView-Objective-C (1.1.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -118,8 +118,8 @@ SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
-  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
-  JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
+  JCore: 9e9bd280a38090d66aca0a7547581cd29804c6eb
+  JPush: 8ea7c5bee363191cb5214f5d34ae11e1c5494722
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -130,7 +130,7 @@ SPEC CHECKSUMS:
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  SCLAlertView-Objective-C: d397ae2b52bae7dedf7188fa1616fcb89200b33a
+  SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 3c531b5e64576e4b947127b9b1f46b685dfa3b37
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
@@ -144,4 +144,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 08aa6d374c69fa39c985f2867b22f2a85e4eee2a
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
