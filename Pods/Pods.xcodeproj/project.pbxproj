@@ -726,6 +726,7 @@
 		01E6F799D2DF5FB5DE60C8E378085892 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetPickerFilterDelegate.h; path = Classes/ELCImagePicker/ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
 		0278C415FFE46C655A2DAE6737311FB8 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		03138628A85586D2A8FF18089AAF7EB7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		03AD99F109C4DE3493AB4F2FFA1E388A /* libjcore-ios-1.1.3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.3.a"; sourceTree = "<group>"; };
 		03F002A9AE25E95B8047B93D728C8355 /* SlackTextViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackTextViewController-dummy.m"; sourceTree = "<group>"; };
 		03FCA32692F664936C5BC72F869117CE /* HappyDNS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HappyDNS-prefix.pch"; sourceTree = "<group>"; };
 		044528182A0C6EB064ACFB95056E4165 /* ELCAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAssetCell.m; path = Classes/ELCImagePicker/ELCAssetCell.m; sourceTree = "<group>"; };
@@ -961,7 +962,6 @@
 		624BB260E68B955D32800525B7388831 /* QNIpModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNIpModel.m; path = HappyDNS/Assessment/QNIpModel.m; sourceTree = "<group>"; };
 		628DDDF5E60261D58819ADE70DC91553 /* RDVTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDVTabBarController-dummy.m"; sourceTree = "<group>"; };
 		62DAE06F8AAA426C76EE0A8FA2117395 /* QNPHAssetFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNPHAssetFile.h; path = QiniuSDK/Common/QNPHAssetFile.h; sourceTree = "<group>"; };
-		6324DB8CBBE427DB17F30353B738AE7C /* libjpush-ios-3.0.3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.3.a"; sourceTree = "<group>"; };
 		636FDC9D1C183E4352D57104B96AB44C /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "SCLAlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		63DB548E2D61BE068FE14BE2E76CEF66 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		649576310978B46510C621D55E544F71 /* QNPHAssetResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNPHAssetResource.m; path = QiniuSDK/Common/QNPHAssetResource.m; sourceTree = "<group>"; };
@@ -1126,6 +1126,7 @@
 		A895217FFC1CB41244AFD02A6DCFFCA8 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		A8AE8E180EF68B7FD0B9ECA0B73CD03C /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKExtension.framework; path = ShareSDK/Support/Optional/ShareSDKExtension.framework; sourceTree = "<group>"; };
 		A8E44BDF984D6F978ACBF5C78C2D1D39 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAlbumPickerController.m; path = Classes/ELCImagePicker/ELCAlbumPickerController.m; sourceTree = "<group>"; };
+		A9C42B7AECEB2A793479CDA99AE5B73F /* libjpush-ios-3.0.5.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.5.a"; sourceTree = "<group>"; };
 		AA1F6F8B4EA6B5FC1627AAA08F454BEC /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SLKAdditions.h"; path = "Source/UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
 		AAA47C1F26F62409B8E7471325B673B9 /* HMSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
 		ABFFCA0CB5D533BF89C01E2A785E204D /* GBDeviceInfo_Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_Common.m; path = GBDeviceInfo/GBDeviceInfo_Common.m; sourceTree = "<group>"; };
@@ -1282,7 +1283,6 @@
 		EBF5712A78E8E62F9467ADAE296795DE /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
 		EDE63021B86C629D88A78257FC931190 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		EDF774FFDBDCF336F7C1513235721E6B /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
-		EF4A28D2353AC473287B33459EFA3707 /* libjcore-ios-1.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.2.a"; sourceTree = "<group>"; };
 		EFBDD159A41C2CC13AD55982C7A501AB /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
 		EFDA6943BE37EA61AFC17F5F864649ED /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		F013152A015D3D4EE67F959B69D8A85A /* GVUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVUserDefaults.h; path = GVUserDefaults/GVUserDefaults.h; sourceTree = "<group>"; };
@@ -1623,7 +1623,7 @@
 			isa = PBXGroup;
 			children = (
 				57817CEE3192D0515D53429A4263C321 /* JPUSHService.h */,
-				7026615A9D159AC3204C0F9B6E4F7D55 /* Frameworks */,
+				61D85190F90C824BAAB1EB26C4606186 /* Frameworks */,
 			);
 			name = JPush;
 			path = JPush;
@@ -1669,14 +1669,6 @@
 				AEC914A929BE05BC0D9303A3B767C2BB /* WebKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		1628A2ECF2A4E01606D5F7DA19015A83 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EF4A28D2353AC473287B33459EFA3707 /* libjcore-ios-1.1.2.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		16D74E97C48B43809C2EF5D3D55A4C23 /* Support Files */ = {
@@ -2070,6 +2062,14 @@
 			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
+		61D85190F90C824BAAB1EB26C4606186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C42B7AECEB2A793479CDA99AE5B73F /* libjpush-ios-3.0.5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64E1D96E55BC63EB03E659635ADBE5C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2237,14 +2237,6 @@
 			children = (
 				F28B8FF2F17E7D45E8C6C98F28135619 /* libWeChatSDK.a */,
 				4D61EAB733B6F12EB039A8BDC9F7F0FB /* WechatConnector.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7026615A9D159AC3204C0F9B6E4F7D55 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6324DB8CBBE427DB17F30353B738AE7C /* libjpush-ios-3.0.3.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2952,6 +2944,14 @@
 			name = WeChat;
 			sourceTree = "<group>";
 		};
+		F97836AC8E4D61A442CED34608DFA1E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AD99F109C4DE3493AB4F2FFA1E388A /* libjcore-ios-1.1.3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F98AE8B9D4BDD7039524AD54072FBCF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -3010,7 +3010,7 @@
 		FE08383C88388B80B5B71DAC1623C1D9 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				1628A2ECF2A4E01606D5F7DA19015A83 /* Frameworks */,
+				F97836AC8E4D61A442CED34608DFA1E6 /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
