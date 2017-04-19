@@ -36,7 +36,7 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
-  - MOBFoundation (2.2.18)
+  - MOBFoundation (2.2.19)
   - pop (1.0.9)
   - Qiniu (7.1.5):
     - AFNetworking (~> 3)
@@ -125,7 +125,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  MOBFoundation: 209abfa5bb189c193f693bb610fa33f0031956e4
+  MOBFoundation: e962b2aee79e2b8f626e2d30c2f23e9f13e5331e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
