@@ -1,1 +1,1 @@
-../../../../ShareSDK3/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerBroadcastContext.h
+../../../../ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerBroadcastContext.h

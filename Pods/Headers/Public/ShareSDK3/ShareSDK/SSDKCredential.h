@@ -1,1 +1,1 @@
-../../../../ShareSDK3/ShareSDK/ShareSDK.framework/Headers/SSDKCredential.h
+../../../../ShareSDK3/SDK/ShareSDK/ShareSDK.framework/Headers/SSDKCredential.h

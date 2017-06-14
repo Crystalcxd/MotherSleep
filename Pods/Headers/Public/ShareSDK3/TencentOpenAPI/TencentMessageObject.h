@@ -1,1 +1,1 @@
-../../../../ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/TencentMessageObject.h
+../../../../ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/TencentMessageObject.h

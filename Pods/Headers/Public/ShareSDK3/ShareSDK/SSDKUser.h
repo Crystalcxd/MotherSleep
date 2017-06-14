@@ -1,1 +1,1 @@
-../../../../ShareSDK3/ShareSDK/ShareSDK.framework/Headers/SSDKUser.h
+../../../../ShareSDK3/SDK/ShareSDK/ShareSDK.framework/Headers/SSDKUser.h

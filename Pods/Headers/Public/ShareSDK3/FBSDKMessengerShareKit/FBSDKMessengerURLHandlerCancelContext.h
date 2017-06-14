@@ -1,1 +1,1 @@
-../../../../ShareSDK3/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerCancelContext.h
+../../../../ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerCancelContext.h
