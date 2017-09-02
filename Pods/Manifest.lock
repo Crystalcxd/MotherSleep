@@ -24,7 +24,7 @@ PODS:
     - GBDeviceInfo/Core (= 4.3.0)
   - GBDeviceInfo/Core (4.3.0)
   - GVUserDefaults (1.0.2)
-  - HappyDNS (0.3.10)
+  - HappyDNS (0.3.12)
   - HMSegmentedControl (1.5.4)
   - JCore (1.1.5)
   - JPush (3.0.6):
@@ -116,7 +116,7 @@ SPEC CHECKSUMS:
   Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   GBDeviceInfo: caae36532afcc209b51ac62bba547aadab9e88f2
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
   HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
   JCore: 9bd9c770c877c583d98b90a68792b8361974c231
   JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
