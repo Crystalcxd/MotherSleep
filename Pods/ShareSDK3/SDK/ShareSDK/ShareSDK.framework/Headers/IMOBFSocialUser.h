@@ -6,8 +6,7 @@
 //  Copyright © 2017年 MOB. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "IMOBFDataModel.h"
+#import <MOBFoundation/IMOBFDataModel.h>
 
 /**
  社交用户信息协议
