@@ -14,15 +14,15 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.8.6):
-    - Fabric (~> 1.6.3)
+  - Crashlytics (3.9.0):
+    - Fabric (~> 1.7.0)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.6.13)
-  - GBDeviceInfo (4.3.0):
-    - GBDeviceInfo/Core (= 4.3.0)
-  - GBDeviceInfo/Core (4.3.0)
+  - Fabric (1.7.0)
+  - GBDeviceInfo (4.4.0):
+    - GBDeviceInfo/Core (= 4.4.0)
+  - GBDeviceInfo/Core (4.4.0)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.12)
   - HMSegmentedControl (1.5.4)
@@ -35,7 +35,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
-  - MJRefresh (3.1.12)
+  - MJRefresh (3.1.14)
   - MOBFoundation (3.0.4)
   - pop (1.0.10)
   - Qiniu (7.1.8):
@@ -66,7 +66,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.6)
   - UMengAnalytics-NO-IDFA (4.2.5)
-  - Valet (2.4.1)
+  - Valet (2.4.2)
   - WebViewJavascriptBridge (6.0.2)
   - YYModel (1.0.4)
 
@@ -109,12 +109,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: 2fb5676bc811af011a04513451f463dac6803206
-  GBDeviceInfo: caae36532afcc209b51ac62bba547aadab9e88f2
+  Fabric: e6be012366472553807dada21243c5ab8d904151
+  GBDeviceInfo: 2ec90c6808d063061b16773ec8e857257058dc5d
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
   HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
@@ -124,7 +124,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
-  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MJRefresh: 6642e35b3227a5447b9fd5e17c552c90196c9859
   MOBFoundation: ee0d83f92fe394f7f2b145a407441d08ca1c831c
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Qiniu: 2f1b9d13904b6a7608a66a2d02c5b7b24575622a
@@ -138,7 +138,7 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
-  Valet: 6c148c9562e871f7f6b364eda80e78b377e5b908
+  Valet: 14463ef24fab8fd5809044ecedb61484b799fdd6
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
