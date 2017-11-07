@@ -135,7 +135,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  @param style A constant that specifies the style of main table view that the controller object is to manage (UITableViewStylePlain or UITableViewStyleGrouped).
  @return An initialized SLKTextViewController object or nil if the object could not be created.
  */
-- (instancetype)initWithTableViewStyle:(UITableViewStyle)style;
+- (instancetype __nullable)initWithTableViewStyle:(UITableViewStyle)style;
 
 /**
  Initializes a collection view controller and configures the collection view with the provided layout.
@@ -144,7 +144,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  @param layout The layout object to associate with the collection view. The layout controls how the collection view presents its cells and supplementary views.
  @return An initialized SLKTextViewController object or nil if the object could not be created.
  */
-- (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
+- (instancetype __nullable)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
 
 /**
  Initializes a text view controller to manage an arbitraty scroll view. The caller is responsible for configuration of the scroll view, including wiring the delegate.
@@ -152,7 +152,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  @param a UISCrollView to be used as the main content area.
  @return An initialized SLKTextViewController object or nil if the object could not be created.
  */
-- (instancetype)initWithScrollView:(UIScrollView *)scrollView;
+- (instancetype __nullable)initWithScrollView:(UIScrollView *)scrollView;
 
 /**
  Initializes either a table or collection view controller.
@@ -161,7 +161,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  @param decoder An unarchiver object.
  @return An initialized SLKTextViewController object or nil if the object could not be created.
  */
-- (instancetype)initWithCoder:(NSCoder *)decoder;
+- (instancetype __nullable)initWithCoder:(NSCoder *)decoder;
 
 /**
  Returns the tableView style to be configured when using Interface Builder. Default is UITableViewStylePlain.
@@ -418,13 +418,13 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 @property (nonatomic, readonly, getter = isAutoCompleting) BOOL autoCompleting;
 
 /** The recently found prefix symbol used as prefix for autocompletion mode. */
-@property (nonatomic, readonly, copy) NSString *_Nullable foundPrefix;
+@property (nonatomic, copy) NSString *_Nullable foundPrefix;
 
 /** The range of the found prefix in the text view content. */
-@property (nonatomic, readonly) NSRange foundPrefixRange;
+@property (nonatomic) NSRange foundPrefixRange;
 
 /** The recently found word at the text view's caret position. */
-@property (nonatomic, readonly, copy) NSString *_Nullable foundWord;
+@property (nonatomic, copy) NSString *_Nullable foundWord;
 
 /** An array containing all the registered prefix strings for autocompletion. */
 @property (nonatomic, readonly, copy) NSSet <NSString *> *_Nullable registeredPrefixes;
@@ -443,16 +443,25 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  You can override this method to disable momentarily the auto-completion feature, or to let it visible for longer time.
  You SHOULD call super to inherit some conditionals.
  
- @param text The textView's current text.
  @return YES if the controller is allowed to process the text for auto-completion.
  */
-- (BOOL)shouldProcessTextForAutoCompletion:(NSString *)text NS_REQUIRES_SUPER;
+- (BOOL)shouldProcessTextForAutoCompletion;
+
+/**
+ During text autocompletion, by default, auto-correction and spell checking are disabled.
+ Doing so, refreshes the text input to get rid of the Quick Type bar.
+ You can override this method to avoid disabling in some cases.
+ 
+ @return YES if the controller should not hide the quick type bar.
+ */
+- (BOOL)shouldDisableTypingSuggestionForAutoCompletion;
 
 /**
  Notifies the view controller either the autocompletion prefix or word have changed.
  Use this method to modify your data source or fetch data asynchronously from an HTTP resource.
  Once your data source is ready, make sure to call -showAutoCompletionView: to display the view accordingly.
  You don't need call super since this method doesn't do anything.
+ You SHOULD call super to inherit some conditionals.
 
  @param prefix The detected prefix.
  @param word The derected word.
@@ -531,7 +540,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 - (nullable NSString *)keyForTextCaching;
 
 /**
- Removes the current's vien controller cached text.
+ Removes the current view controller's cached text.
  To enable this, you must return a valid key string in -keyForTextCaching.
  */
 - (void)clearCachedText;

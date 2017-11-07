@@ -14,12 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.9.0):
-    - Fabric (~> 1.7.0)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.7.0)
+  - Fabric (1.7.2)
   - GBDeviceInfo (4.4.0):
     - GBDeviceInfo/Core (= 4.4.0)
   - GBDeviceInfo/Core (4.4.0)
@@ -35,8 +35,8 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
-  - MJRefresh (3.1.14.1)
-  - MOBFoundation (3.0.4)
+  - MJRefresh (3.1.15)
+  - MOBFoundation (3.0.5)
   - pop (1.0.10)
   - Qiniu (7.1.8):
     - AFNetworking (~> 3)
@@ -47,20 +47,20 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK3 (4.0.3):
+  - ShareSDK3 (4.0.4):
     - MOBFoundation
-    - ShareSDK3/ShareSDK (= 4.0.3)
-  - ShareSDK3/ShareSDK (4.0.3):
+    - ShareSDK3/ShareSDK (= 4.0.4)
+  - ShareSDK3/ShareSDK (4.0.4):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/Facebook (4.0.3):
+  - ShareSDK3/ShareSDKPlatforms/Facebook (4.0.4):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/QQ (4.0.3):
+  - ShareSDK3/ShareSDKPlatforms/QQ (4.0.4):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (4.0.3):
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (4.0.4):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/WeChat (4.0.3):
+  - ShareSDK3/ShareSDKPlatforms/WeChat (4.0.4):
     - MOBFoundation
-  - SlackTextViewController (1.9.5)
+  - SlackTextViewController (1.9.6)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
@@ -109,11 +109,11 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: e6be012366472553807dada21243c5ab8d904151
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   GBDeviceInfo: 2ec90c6808d063061b16773ec8e857257058dc5d
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
@@ -124,16 +124,16 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
-  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
-  MOBFoundation: ee0d83f92fe394f7f2b145a407441d08ca1c831c
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  MOBFoundation: 9166eb08ad9e99cfdd7fd1765707ea2250192e9e
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Qiniu: 2f1b9d13904b6a7608a66a2d02c5b7b24575622a
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK3: cdbebbde1166baec75b6003248bedbf33e8404c8
-  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
+  ShareSDK3: 75b57bab0cbe3119e281c7668eaad9d48adf3fde
+  SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f

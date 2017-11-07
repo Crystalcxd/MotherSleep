@@ -160,6 +160,11 @@ static NSString *const SLKTextViewGenericFormattingSelectorPrefix = @"slk_format
     return self.placeholderLabel.textColor;
 }
 
+- (UIFont *)placeholderFont
+{
+    return self.placeholderLabel.font;
+}
+
 - (NSUInteger)numberOfLines
 {
     CGSize contentSize = self.contentSize;
@@ -406,6 +411,16 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     self.placeholderLabel.numberOfLines = numberOfLines;
     
     [self setNeedsLayout];
+}
+
+- (void)setPlaceholderFont:(UIFont *)placeholderFont
+{
+    if (!placeholderFont) {
+        self.placeholderLabel.font = self.font;
+    }
+    else {
+        self.placeholderLabel.font = placeholderFont;
+    }
 }
 
 - (void)setUndoManagerEnabled:(BOOL)enabled
@@ -725,9 +740,15 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
 {
     UIMenuItem *undo = [[UIMenuItem alloc] initWithTitle:NSLocalizedString(@"Undo", nil) action:@selector(slk_undo:)];
     UIMenuItem *redo = [[UIMenuItem alloc] initWithTitle:NSLocalizedString(@"Redo", nil) action:@selector(slk_redo:)];
-    UIMenuItem *format = [[UIMenuItem alloc] initWithTitle:NSLocalizedString(@"Format", nil) action:@selector(slk_presentFormattingMenu:)];
     
-    [[UIMenuController sharedMenuController] setMenuItems:@[undo, redo, format]];
+    NSMutableArray *items = [NSMutableArray arrayWithObjects:undo, redo, nil];
+    
+    if (self.registeredFormattingTitles.count > 0) {
+        UIMenuItem *format = [[UIMenuItem alloc] initWithTitle:NSLocalizedString(@"Format", nil) action:@selector(slk_presentFormattingMenu:)];
+        [items addObject:format];
+    }
+    
+    [[UIMenuController sharedMenuController] setMenuItems:items];
 }
 
 - (void)slk_undo:(id)sender
@@ -1120,13 +1141,6 @@ typedef void (^SLKKeyCommandHandler)(UIKeyCommand *keyCommand);
     [self slk_unregisterNotifications];
     
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(contentSize))];
-    
-    _placeholderLabel = nil;
-    
-    _registeredFormattingTitles = nil;
-    _registeredFormattingSymbols = nil;
-    _registeredKeyCommands = nil;
-    _registeredKeyCallbacks = nil;
 }
 
 @end
