@@ -33,10 +33,10 @@ PODS:
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.0.0)
-  - MiPushSDK (2.2.4)
+  - MBProgressHUD (1.1.0)
+  - MiPushSDK (2.2.8)
   - MJRefresh (3.1.15)
-  - MOBFoundation (3.0.5)
+  - MOBFoundation (3.0.6)
   - pop (1.0.10)
   - Qiniu (7.1.8):
     - AFNetworking (~> 3)
@@ -67,7 +67,7 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.6)
   - UMengAnalytics-NO-IDFA (4.2.5)
   - Valet (2.4.2)
-  - WebViewJavascriptBridge (6.0.2)
+  - WebViewJavascriptBridge (6.0.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -122,10 +122,10 @@ SPEC CHECKSUMS:
   JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
-  MOBFoundation: 9166eb08ad9e99cfdd7fd1765707ea2250192e9e
+  MOBFoundation: 6f6ec1c2513278551f1a808b5692e983d99e5069
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Qiniu: 2f1b9d13904b6a7608a66a2d02c5b7b24575622a
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -139,7 +139,7 @@ SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   Valet: 14463ef24fab8fd5809044ecedb61484b799fdd6
-  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 08aa6d374c69fa39c985f2867b22f2a85e4eee2a
