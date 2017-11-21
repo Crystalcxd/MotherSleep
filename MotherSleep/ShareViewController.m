@@ -99,7 +99,6 @@
         //1、创建分享参数（必要）
         NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
         
-        
         switch (tag - TABLEVIEW_BEGIN_TAG) {
             case 0:
                 [shareParams SSDKSetupWeChatParamsByText:text title:title url:[NSURL URLWithString:shareUrl] thumbImage:[UIImage imageNamed:icon] image:[UIImage imageNamed:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台

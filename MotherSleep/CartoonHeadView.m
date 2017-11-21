@@ -23,10 +23,8 @@
     if (self) {
         self.titleView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 10, SCREENWIDTH, 30.43)];
         self.titleView.contentMode = UIViewContentModeScaleAspectFit;
-//        [self addSubview:self.titleView];
         
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 142, 0, 284, 230)];
-//        self.imageView.userInteractionEnabled = YES;
         [self addSubview:self.imageView];
     }
     return self;

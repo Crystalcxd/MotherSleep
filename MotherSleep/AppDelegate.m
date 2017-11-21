@@ -9,15 +9,12 @@
 #import "AppDelegate.h"
 
 #import "SliderViewController.h"
-
 #import "LeftViewController.h"
 
 #import "WMUserDefault.h"
 
-#import "UMMobClick/MobClick.h"
-
 #import "MMPDeepSleepPreventer.h"
-
+#import "UMMobClick/MobClick.h"
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKConnector/ShareSDKConnector.h>
 #import <FBSDKMessengerShareKit/FBSDKMessengerSharer.h>
@@ -83,14 +80,12 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     MMPDeepSleepPreventer *niceSleep = [MMPDeepSleepPreventer sharedSingleton];
     [niceSleep startPreventSleep];
     
-    [ShareSDK registerApp:@"19e27515b0758"
-     
-          activePlatforms:@[
-                            @(SSDKPlatformTypeFacebook),
-                            @(SSDKPlatformTypeWechat),
-                            @(SSDKPlatformTypeTwitter)
-                            ]
-                 onImport:^(SSDKPlatformType platformType)
+    [ShareSDK registerActivePlatforms:@[
+                                        @(SSDKPlatformTypeFacebook),
+                                        @(SSDKPlatformTypeWechat),
+                                        @(SSDKPlatformTypeTwitter)
+                                        ]
+                             onImport:^(SSDKPlatformType platformType)
      {
          switch (platformType)
          {
@@ -104,18 +99,11 @@ static void displayStatusChanged(CFNotificationCenterRef center,
                  break;
          }
      }
-          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
+                      onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
      {
          
          switch (platformType)
          {
-                 //             case SSDKPlatformTypeSinaWeibo:
-                 //                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
-                 //                 [appInfo SSDKSetupSinaWeiboByAppKey:@"568898243"
-                 //                                           appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
-                 //                                         redirectUri:@"http://www.sharesdk.cn"
-                 //                                            authType:SSDKAuthTypeBoth];
-                 //                 break;
              case SSDKPlatformTypeFacebook:
                  [appInfo SSDKSetupFacebookByApiKey:@"698594110304485"
                                           appSecret:@"dbd4e6baa74d1e16b182bd3dfe964973"
@@ -130,19 +118,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
                                          consumerSecret:@"XsyrVW5fPp8m5MB1qUNFj5D4jyoYoSsUSdsGKPa6p6h9Nce1za"
                                             redirectUri:@"http://MotherSleep"];
                  break;
-                 
-                 //             case SSDKPlatformTypeQQ:
-                 //                 [appInfo SSDKSetupQQByAppId:@"100371282"
-                 //                                      appKey:@"aed9b0303e3ed1e27bae87c33761161d"
-                 //                                    authType:SSDKAuthTypeBoth];
-                 //                 break;
-                 //             case SSDKPlatformTypeRenren:
-                 //                 [appInfo        SSDKSetupRenRenByAppId:@"226427"
-                 //                                                 appKey:@"fc5b8aed373c4c27a05b712acba0f8c3"
-                 //                                              secretKey:@"f29df781abdd4f49beca5a2194676ca4"
-                 //                                               authType:SSDKAuthTypeBoth];
-                 //                 break;
-                 
              default:
                  break;
          }
@@ -182,7 +157,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-//    self.isInBackground = YES;
     UIApplication *app = [UIApplication sharedApplication];
     self.taskID = [app beginBackgroundTaskWithExpirationHandler:^{ //如果系统觉得我们运行时间太长，将执行这个程序块，并停止运行应用程序
         
