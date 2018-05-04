@@ -443,7 +443,6 @@
 				4CD4EF831D8D6C820014C99F /* Sources */,
 				4CD4EF841D8D6C820014C99F /* Frameworks */,
 				4CD4EF851D8D6C820014C99F /* Resources */,
-				9ECB2DE5A2773726109487D0 /* [CP] Embed Pods Frameworks */,
 				467EA8AE58B2E6F32F5D00E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -631,21 +630,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9ECB2DE5A2773726109487D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2E89D453A1284104FB53A58 /* [CP] Check Pods Manifest.lock */ = {
