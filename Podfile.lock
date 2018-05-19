@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Crashlytics (3.10.1):
     - Fabric (~> 1.7.5)
@@ -25,7 +25,7 @@ PODS:
   - GBDeviceInfo/Core (5.1.0)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.14)
-  - HMSegmentedControl (1.5.4)
+  - HMSegmentedControl (1.5.5)
   - JCore (1.1.9)
   - JPush (3.0.9):
     - JCore (~> 1.1.7)
@@ -38,7 +38,7 @@ PODS:
   - MJRefresh (3.1.15.3)
   - MOBFoundation (3.1.5)
   - pop (1.0.10)
-  - Qiniu (7.2.3):
+  - Qiniu (7.2.4):
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
@@ -107,7 +107,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Crashlytics
     - DACircularProgress
@@ -143,7 +143,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
@@ -152,7 +152,7 @@ SPEC CHECKSUMS:
   GBDeviceInfo: 8e43440ae1264d9a79beea81800363cf192ce322
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
-  HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -162,7 +162,7 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   MOBFoundation: d961251ce6de54917f678dc711962d1385ae7ee1
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  Qiniu: ae0fea1cc379fae1560d8748ac537e0fbeb8626e
+  Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SCLAlertView-Objective-C: 917836fb2349afa58edc43d592d22d21d46bb2a4
@@ -179,4 +179,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 08aa6d374c69fa39c985f2867b22f2a85e4eee2a
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
