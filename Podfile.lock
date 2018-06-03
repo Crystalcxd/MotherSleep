@@ -14,21 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.7.6)
-  - GBDeviceInfo (5.1.0):
-    - GBDeviceInfo/Core (= 5.1.0)
-  - GBDeviceInfo/Core (5.1.0)
+  - Fabric (1.7.7)
+  - GBDeviceInfo (5.2.0):
+    - GBDeviceInfo/Core (= 5.2.0)
+  - GBDeviceInfo/Core (5.2.0)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.14)
   - HMSegmentedControl (1.5.5)
-  - JCore (1.1.9)
+  - JCore (1.2.0)
   - JPush (3.0.9):
-    - JCore (~> 1.1.7)
+    - JCore (~> 1.2.0)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -36,7 +36,7 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.1.15.3)
-  - MOBFoundation (3.1.5)
+  - MOBFoundation (3.1.6)
   - pop (1.0.10)
   - Qiniu (7.2.4):
     - HappyDNS (~> 0.3)
@@ -144,23 +144,23 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
-  GBDeviceInfo: 8e43440ae1264d9a79beea81800363cf192ce322
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  GBDeviceInfo: 2c65ceb9404f9079264d4c238f5b81916fdfc5e2
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: 27598485098d0db99d2812cba048003457d08cfb
-  JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
+  JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
+  JPush: 48041e8c5ad2ef9b48709eb0888af9640b36e9b0
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  MOBFoundation: d961251ce6de54917f678dc711962d1385ae7ee1
+  MOBFoundation: a87c5f11fb87f873337189c3ec0add4d3ec6221a
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
@@ -179,4 +179,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 08aa6d374c69fa39c985f2867b22f2a85e4eee2a
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

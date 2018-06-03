@@ -1053,6 +1053,7 @@
 		8D49F59F98D1446C30BF80D767BF95FF /* VALSecureEnclaveValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet_Protected.h; path = Valet/VALSecureEnclaveValet_Protected.h; sourceTree = "<group>"; };
 		8D763E03453524360CC38A5D1A035D60 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		8DCB765AE5621CDE829B6E871BD16D7F /* UIActivityIndicator-for-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIActivityIndicator-for-SDWebImage.xcconfig"; sourceTree = "<group>"; };
+		8E96AEA85A90371298DFE3BFA5158DE6 /* libjcore-ios-1.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.0.a"; sourceTree = "<group>"; };
 		8ED2F07A9412AB01377FC9972D00D1D5 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		8F5BF6B2ACB6AB18AE9772FDDDEC63F5 /* QNUrlSafeBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNUrlSafeBase64.m; path = QiniuSDK/Common/QNUrlSafeBase64.m; sourceTree = "<group>"; };
 		8F7198FBA78FB6710EC6E75C0DBEBE66 /* QNNiuDns.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNiuDns.h; path = HappyDNS/Http/QNNiuDns.h; sourceTree = "<group>"; };
@@ -1204,7 +1205,6 @@
 		CACBE6FE960E508A95A084578696360F /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		CB59F9E357CBB11C0CF5ED0B55C31973 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		CBB16866501A0A9729295CC351C5DEC4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "SCLAlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		CBBFAB16E72D31BB8FA82E60CFE5EE5E /* libjcore-ios-1.1.9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.9.a"; sourceTree = "<group>"; };
 		CBC9F16583023154CCE0581238119B6F /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		CBFB335F8770B863780E1EF9CE8ECEDE /* UIResponder+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+SLKAdditions.m"; path = "Source/UIResponder+SLKAdditions.m"; sourceTree = "<group>"; };
 		CC76B034424427EB9AB7C7FF92BEAD88 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
@@ -2174,6 +2174,14 @@
 			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
+		6C9DF834112FB93C942FB65C68C1F642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E96AEA85A90371298DFE3BFA5158DE6 /* libjcore-ios-1.2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6CA69355BE746CD011116EBD2DECDA48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2205,7 +2213,7 @@
 		72115228E9449847EF5FF360943A82EF /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				D74A4352857108D797EAB3E7EA741523 /* Frameworks */,
+				6C9DF834112FB93C942FB65C68C1F642 /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2725,14 +2733,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
-			sourceTree = "<group>";
-		};
-		D74A4352857108D797EAB3E7EA741523 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBBFAB16E72D31BB8FA82E60CFE5EE5E /* libjcore-ios-1.1.9.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D88FB9D1D42B1AF8DCBD2F4714A225A2 /* Qiniu */ = {
