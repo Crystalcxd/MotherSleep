@@ -820,7 +820,6 @@
 		2A0066F70D4AAC9DDF0EAA9F2A24E803 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "SCLAlertView/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		2A25A018B8440B0ACDD16AF3CB6523CE /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetTablePicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib; sourceTree = "<group>"; };
 		2A2CDD4DC5F16FAA297B026B9962DA92 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
-		2A7BF3C66C1A4A0C3585F97B2754F455 /* libjpush-ios-3.0.9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.9.a"; sourceTree = "<group>"; };
 		2BCBF2D31A9F209C055A7DD2FA50E62E /* QNIpModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNIpModel.h; path = HappyDNS/Assessment/QNIpModel.h; sourceTree = "<group>"; };
 		2C3A26934A98CE27E616241D03126119 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		2C7384D16FE116CD6D36B1125FBD5F6F /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
@@ -1053,7 +1052,6 @@
 		8D49F59F98D1446C30BF80D767BF95FF /* VALSecureEnclaveValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet_Protected.h; path = Valet/VALSecureEnclaveValet_Protected.h; sourceTree = "<group>"; };
 		8D763E03453524360CC38A5D1A035D60 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		8DCB765AE5621CDE829B6E871BD16D7F /* UIActivityIndicator-for-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIActivityIndicator-for-SDWebImage.xcconfig"; sourceTree = "<group>"; };
-		8E96AEA85A90371298DFE3BFA5158DE6 /* libjcore-ios-1.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.0.a"; sourceTree = "<group>"; };
 		8ED2F07A9412AB01377FC9972D00D1D5 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		8F5BF6B2ACB6AB18AE9772FDDDEC63F5 /* QNUrlSafeBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNUrlSafeBase64.m; path = QiniuSDK/Common/QNUrlSafeBase64.m; sourceTree = "<group>"; };
 		8F7198FBA78FB6710EC6E75C0DBEBE66 /* QNNiuDns.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNiuDns.h; path = HappyDNS/Http/QNNiuDns.h; sourceTree = "<group>"; };
@@ -1101,6 +1099,7 @@
 		A0072C960BF191248D3BFA4A24D90CF3 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
 		A0A543BF8BF4F2B9A00A427C9C3750FE /* QNDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDomain.h; path = HappyDNS/Common/QNDomain.h; sourceTree = "<group>"; };
 		A1061436EFA1889509D09320F1A35E5F /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAssetTablePicker.m; path = Classes/ELCImagePicker/ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		A1DE0BA7957324A3C7C565AA6EF9E77E /* libjcore-ios-1.2.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.1.a"; sourceTree = "<group>"; };
 		A20E8544A58AF0683B0CF6AA36C7F6C1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		A317B2557CA6A8C17258D102F6D0692D /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
 		A31BCD7F2BB8A137BF3745E13211A66D /* libSlackTextViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSlackTextViewController.a; path = libSlackTextViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1175,6 +1174,7 @@
 		BE9C625859042AF2D1314BB375D0B691 /* QNResumeUpload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResumeUpload.h; path = QiniuSDK/Storage/QNResumeUpload.h; sourceTree = "<group>"; };
 		BEFD27AE3B4FF4354F292B267F8DDD20 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		BF48723CEF88C65CDDD14D1364908A5D /* QNDnspodEnterprise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodEnterprise.m; path = HappyDNS/Http/QNDnspodEnterprise.m; sourceTree = "<group>"; };
+		BF6D2694D9B11A480DC30CEDC9F0F325 /* libjpush-ios-3.1.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.1.0.a"; sourceTree = "<group>"; };
 		BFDEFBDB52BF8B08E39575BB9DB7D037 /* QNRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNRecord.m; path = HappyDNS/Common/QNRecord.m; sourceTree = "<group>"; };
 		BFF2D289F47FEC54990BC1EFC128B00A /* libQiniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQiniu.a; path = libQiniu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C011F507765172C4082A76E5384C08DD /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
@@ -1562,6 +1562,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013285ECDA1AD9150EA18C1EB716522D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1DE0BA7957324A3C7C565AA6EF9E77E /* libjcore-ios-1.2.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		01AD99EE9A0D83DB92C42118314D3AD0 /* SCLAlertView-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
@@ -1617,7 +1625,7 @@
 			isa = PBXGroup;
 			children = (
 				BBBFD3130DAFA8A1CB40DAA12B94767D /* JPUSHService.h */,
-				90A3DCA7C33A2B983AC15FB1EBB1B87A /* Frameworks */,
+				DD4579827E0AA0F4E808F2B120A7A57F /* Frameworks */,
 			);
 			name = JPush;
 			path = JPush;
@@ -2174,14 +2182,6 @@
 			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
-		6C9DF834112FB93C942FB65C68C1F642 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8E96AEA85A90371298DFE3BFA5158DE6 /* libjcore-ios-1.2.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6CA69355BE746CD011116EBD2DECDA48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2213,7 +2213,7 @@
 		72115228E9449847EF5FF360943A82EF /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				6C9DF834112FB93C942FB65C68C1F642 /* Frameworks */,
+				013285ECDA1AD9150EA18C1EB716522D /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2478,14 +2478,6 @@
 			);
 			name = ELCImagePickerController;
 			path = ELCImagePickerController;
-			sourceTree = "<group>";
-		};
-		90A3DCA7C33A2B983AC15FB1EBB1B87A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A7BF3C66C1A4A0C3585F97B2754F455 /* libjpush-ios-3.0.9.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		923CE3A494565BBDD6F631EE4A055B20 /* Frameworks */ = {
@@ -2790,6 +2782,14 @@
 			);
 			name = Qiniu;
 			path = Qiniu;
+			sourceTree = "<group>";
+		};
+		DD4579827E0AA0F4E808F2B120A7A57F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D2694D9B11A480DC30CEDC9F0F325 /* libjpush-ios-3.1.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DF7294171FDDB504A9E581E118C319C6 /* TTTAttributedLabel */ = {
