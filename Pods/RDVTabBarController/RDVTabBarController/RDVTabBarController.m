@@ -54,8 +54,38 @@
     [super viewWillAppear:animated];
     
     [self setSelectedIndex:[self selectedIndex]];
-    
-    [self setTabBarHidden:self.isTabBarHidden animated:NO];
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+
+    CGSize viewSize = self.view.bounds.size;
+    CGFloat tabBarStartingY = viewSize.height;
+    CGFloat contentViewHeight = viewSize.height;
+    CGFloat tabBarHeight = CGRectGetHeight([[self tabBar] frame]);
+
+    if (!tabBarHeight) {
+        if (@available(iOS 11.0, *)) {
+            CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
+            tabBarHeight = 58.f + safeAreaBottom / 1.5f;
+        } else {
+            tabBarHeight = 58.f;
+        }
+    } else if (@available(iOS 11.0, *)) {
+        CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
+        tabBarHeight = 58.f + safeAreaBottom / 1.5f;
+    }
+
+    if (!self.tabBarHidden) {
+        tabBarStartingY = viewSize.height - tabBarHeight;
+        if (![[self tabBar] isTranslucent]) {
+            contentViewHeight -= ([[self tabBar] minimumContentHeight] ?: tabBarHeight);
+        }
+    }
+
+    [[self tabBar] setFrame:CGRectMake(0, tabBarStartingY, viewSize.width, tabBarHeight)];
+    [[self contentView] setFrame:CGRectMake(0, 0, viewSize.width, contentViewHeight)];
+    [[[self selectedViewController] view] setFrame:[[self contentView] bounds]];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -66,7 +96,7 @@
     return self.selectedViewController.preferredStatusBarUpdateAnimation;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     UIInterfaceOrientationMask orientationMask = UIInterfaceOrientationMaskAll;
     for (UIViewController *viewController in [self viewControllers]) {
         if (![viewController respondsToSelector:@selector(supportedInterfaceOrientations)]) {
@@ -81,16 +111,6 @@
     }
     
     return orientationMask;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    for (UIViewController *viewCotroller in [self viewControllers]) {
-        if (![viewCotroller respondsToSelector:@selector(shouldAutorotateToInterfaceOrientation:)] ||
-            ![viewCotroller shouldAutorotateToInterfaceOrientation:toInterfaceOrientation]) {
-            return NO;
-        }
-    }
-    return YES;
 }
 
 #pragma mark - Methods
@@ -115,10 +135,11 @@
     
     [self setSelectedViewController:[[self viewControllers] objectAtIndex:selectedIndex]];
     [self addChildViewController:[self selectedViewController]];
-    [[[self selectedViewController] view] setFrame:[[self contentView] bounds]];
+    [[[self selectedViewController] view] setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
     [[self contentView] addSubview:[[self selectedViewController] view]];
     [[self selectedViewController] didMoveToParentViewController:self];
-    
+
+    [self.view setNeedsLayout];
     [self setNeedsStatusBarAppearanceUpdate];
 }
 
@@ -155,8 +176,8 @@
 
 - (NSInteger)indexForViewController:(UIViewController *)viewController {
     UIViewController *searchedController = viewController;
-    if ([searchedController navigationController]) {
-        searchedController = [searchedController navigationController];
+    while (searchedController.parentViewController != nil && searchedController.parentViewController != self) {
+        searchedController = searchedController.parentViewController;
     }
     return [[self viewControllers] indexOfObject:searchedController];
 }
@@ -186,44 +207,24 @@
 }
 
 - (void)setTabBarHidden:(BOOL)hidden animated:(BOOL)animated {
+    // make sure any pending layout is done, to prevent spurious animations
+    [self.view layoutIfNeeded];
+
     _tabBarHidden = hidden;
     
-    __weak RDVTabBarController *weakSelf = self;
-    
-    void (^block)() = ^{
-        CGSize viewSize = weakSelf.view.bounds.size;
-        CGFloat tabBarStartingY = viewSize.height;
-        CGFloat contentViewHeight = viewSize.height;
-        CGFloat tabBarHeight = CGRectGetHeight([[weakSelf tabBar] frame]);
-        
-        if (!tabBarHeight) {
-            tabBarHeight = 49;
-        }
-        
-        if (!hidden) {
-            tabBarStartingY = viewSize.height - tabBarHeight;
-            if (![[weakSelf tabBar] isTranslucent]) {
-                contentViewHeight -= ([[weakSelf tabBar] minimumContentHeight] ?: tabBarHeight);
-            }
-            [[weakSelf tabBar] setHidden:NO];
-        }
-        
-        [[weakSelf tabBar] setFrame:CGRectMake(0, tabBarStartingY, viewSize.width, tabBarHeight)];
-        [[weakSelf contentView] setFrame:CGRectMake(0, 0, viewSize.width, contentViewHeight)];
-    };
-    
-    void (^completion)(BOOL) = ^(BOOL finished){
-        if (hidden) {
-            [[weakSelf tabBar] setHidden:YES];
-        }
-    };
-    
-    if (animated) {
-        [UIView animateWithDuration:0.24 animations:block completion:completion];
-    } else {
-        block();
-        completion(YES);
+    [self.view setNeedsLayout];
+
+    if (!_tabBarHidden) {
+        [[self tabBar] setHidden:NO];
     }
+
+    [UIView animateWithDuration:(animated ? 0.24 : 0) animations:^{
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished){
+        if (self.tabBarHidden) {
+            [[self tabBar] setHidden:YES];
+        }
+    }];
 }
 
 - (void)setTabBarHidden:(BOOL)hidden {
@@ -240,6 +241,10 @@
     }
     
     if ([self selectedViewController] == [self viewControllers][index]) {
+        if ([[self delegate] respondsToSelector:@selector(tabBarController:didSelectItemAtIndex:)]) {
+            [[self delegate] tabBarController:self didSelectItemAtIndex:index];
+        }
+        
         if ([[self selectedViewController] isKindOfClass:[UINavigationController class]]) {
             UINavigationController *selectedController = (UINavigationController *)[self selectedViewController];
             

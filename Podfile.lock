@@ -14,35 +14,35 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.10.7):
-    - Fabric (~> 1.7.11)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.7.11)
-  - GBDeviceInfo (5.2.0):
-    - GBDeviceInfo/Core (= 5.2.0)
-  - GBDeviceInfo/Core (5.2.0)
+  - Fabric (1.7.13)
+  - GBDeviceInfo (5.4.0):
+    - GBDeviceInfo/Core (= 5.4.0)
+  - GBDeviceInfo/Core (5.4.0)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.14)
   - HMSegmentedControl (1.5.5)
-  - JCore (1.2.1)
-  - JPush (3.1.0):
-    - JCore (~> 1.2.0)
+  - JCore (1.2.5)
+  - JPush (3.1.1.1):
+    - JCore (~> 1.2.5)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MiPushSDK (2.2.8)
-  - MJRefresh (3.1.15.3)
-  - MOBFoundation (3.1.8)
-  - pop (1.0.10)
+  - MJRefresh (3.1.15.7)
+  - MOBFoundation (3.2.0)
+  - pop (1.0.12)
   - Qiniu (7.2.5):
     - HappyDNS (~> 0.3)
-  - RDVTabBarController (1.1.9)
+  - RDVTabBarController (1.2.0)
   - RegexKitLite (4.0)
-  - SCLAlertView-Objective-C (1.1.5)
+  - SCLAlertView-Objective-C (1.1.6)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -144,28 +144,28 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
-  GBDeviceInfo: 2c65ceb9404f9079264d4c238f5b81916fdfc5e2
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  GBDeviceInfo: ae80eb4243d67e2c68d9290a136593da35071382
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: 467b5b56bd367c548f88ee1b5794d94ee07ab319
-  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
+  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
-  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  MOBFoundation: 7f1e157be332576e4d45809a03bc733292c6ad8d
-  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MOBFoundation: ca11e6640e995875ff755faa56ea324eed260e70
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
-  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  RDVTabBarController: b6d63a7fc49b00568ba07255c6171edc737ad833
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  SCLAlertView-Objective-C: 69c8932c332ce61ee9e693379451e2c0b09fb307
+  SCLAlertView-Objective-C: 2bb9be204bffaf24762a0e33fe6ca9645819b3b7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 75b57bab0cbe3119e281c7668eaad9d48adf3fde
   SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
