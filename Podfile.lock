@@ -24,7 +24,7 @@ PODS:
     - GBDeviceInfo/Core (= 6.0.0)
   - GBDeviceInfo/Core (6.0.0)
   - GVUserDefaults (1.0.2)
-  - HappyDNS (0.3.14)
+  - HappyDNS (0.3.15)
   - HMSegmentedControl (1.5.5)
   - JCore (1.2.6)
   - JPush (3.1.2):
@@ -36,7 +36,7 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.1.15.7)
-  - MOBFoundation (3.2.1)
+  - MOBFoundation (3.2.2)
   - pop (1.0.12)
   - Qiniu (7.2.5):
     - HappyDNS (~> 0.3)
@@ -151,7 +151,7 @@ SPEC CHECKSUMS:
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   GBDeviceInfo: b7576f403b3050c1d3f4b490ab1d7dbb951bb1d9
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
+  HappyDNS: 00c15e651a347206e58a20503a32a5564589b56a
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
   JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
@@ -160,7 +160,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  MOBFoundation: ce2ba976fd435b0cb06897466b2746e639895b7d
+  MOBFoundation: b5ff4038ddb9a0f06b685b86408f905a10aa147c
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
   RDVTabBarController: b6d63a7fc49b00568ba07255c6171edc737ad833
