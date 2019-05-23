@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F221D0A967D40412552D93F333D25E86"
+               BlueprintIdentifier = "BB98E1FC6C2504C46E7DE517B82518B8"
+               BuildableName = "libGBDeviceInfo.a"
                BlueprintName = "GBDeviceInfo"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libGBDeviceInfo.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

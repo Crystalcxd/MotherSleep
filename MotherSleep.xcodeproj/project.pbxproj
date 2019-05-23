@@ -604,7 +604,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-resources.sh",
 				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_ROOT}/ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib",
 				"${PODS_ROOT}/ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib",
@@ -629,7 +629,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MotherSleep/Pods-MotherSleep-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2E89D453A1284104FB53A58 /* [CP] Check Pods Manifest.lock */ = {
