@@ -471,10 +471,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## MOBFoundation
-
-Copyright © 2012-2018 mob
-
 ## Mantle
 
 **Copyright (c) GitHub, Inc.**
