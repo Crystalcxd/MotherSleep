@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '507478F6FC09F815DB8108BB4C7F8070'
-               BlueprintName = 'UIActivityIndicator-for-SDWebImage'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUIActivityIndicator-for-SDWebImage.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E4F40BAD8BA5004AF9AD6A8172A0CC01"
+               BuildableName = "libUIActivityIndicator-for-SDWebImage.a"
+               BlueprintName = "UIActivityIndicator-for-SDWebImage"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

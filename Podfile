@@ -1,6 +1,7 @@
 platform :ios, '8.0'
 
 target 'MotherSleep' do
+source 'https://github.com/CocoaPods/Specs.git'
 
 # 网络
 pod 'AFNetworking'
