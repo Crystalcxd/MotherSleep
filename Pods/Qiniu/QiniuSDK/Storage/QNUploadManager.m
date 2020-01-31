@@ -9,17 +9,20 @@
 #import <Foundation/Foundation.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED
-#import "QNALAssetFile.h"
-#import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <UIKit/UIKit.h>
+
+#if !TARGET_OS_MACCATALYST
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "QNALAssetFile.h"
+#endif
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
 #import "QNPHAssetFile.h"
 #import <Photos/Photos.h>
 #endif
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90100
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
 #import "QNPHAssetResource.h"
 #endif
 
@@ -166,8 +169,8 @@
                         withToken:t
             withCompletionHandler:complete
                        withOption:option
-                  withHttpManager:_httpManager
-                withConfiguration:_config];
+                  withHttpManager:self.httpManager
+                withConfiguration:self.config];
         QNAsyncRun(^{
             [up put];
         });
@@ -202,7 +205,7 @@
                 });
             };
 
-            if ([file size] <= _config.putThreshold) {
+            if ([file size] <= self.config.putThreshold) {
                 NSError *error;
                 NSData *data = [file readAllWithError:&error];
                 if (error) {
@@ -217,23 +220,23 @@
             }
 
             NSString *recorderKey = key;
-            if (_config.recorder != nil && _config.recorderKeyGen != nil) {
-                recorderKey = _config.recorderKeyGen(key, [file path]);
+            if (self.config.recorder != nil && self.config.recorderKeyGen != nil) {
+                recorderKey = self.config.recorderKeyGen(key, [file path]);
             }
             
-            NSLog(@"recorder %@", _config.recorder);
+            NSLog(@"recorder %@", self.config.recorder);
             
-            if (_config.useConcurrentResumeUpload) {
+            if (self.config.useConcurrentResumeUpload) {
                 QNConcurrentResumeUpload *up = [[QNConcurrentResumeUpload alloc]
                                                 initWithFile:file
                                                 withKey:key
                                                 withToken:t
-                                                withRecorder:_config.recorder
+                                                withRecorder:self.config.recorder
                                                 withRecorderKey:recorderKey
-                                                withHttpManager:_httpManager
+                                                withHttpManager:self.httpManager
                                                 withCompletionHandler:completionHandler
                                                 withOption:option
-                                                withConfiguration:_config];
+                                                withConfiguration:self.config];
                 QNAsyncRun(^{
                     [up run];
                 });
@@ -244,10 +247,10 @@
                                       withToken:t
                                       withCompletionHandler:complete
                                       withOption:option
-                                      withRecorder:_config.recorder
+                                      withRecorder:self.config.recorder
                                       withRecorderKey:recorderKey
-                                      withHttpManager:_httpManager
-                                      withConfiguration:_config];
+                                      withHttpManager:self.httpManager
+                                      withConfiguration:self.config];
                 QNAsyncRun(^{
                     [up run];
                 });
@@ -279,6 +282,7 @@
     }
 }
 
+#if !TARGET_OS_MACCATALYST
 - (void)putALAsset:(ALAsset *)asset
                key:(NSString *)key
              token:(NSString *)token
@@ -303,13 +307,14 @@
     }
 #endif
 }
+#endif
 
 - (void)putPHAsset:(PHAsset *)asset
                key:(NSString *)key
              token:(NSString *)token
           complete:(QNUpCompletionHandler)completionHandler
             option:(QNUploadOption *)option {
-#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000)
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 90100)
     if ([QNUploadManager checkAndNotifyError:key token:token input:asset complete:completionHandler]) {
         return;
     }
@@ -334,7 +339,7 @@
                      token:(NSString *)token
                   complete:(QNUpCompletionHandler)completionHandler
                     option:(QNUploadOption *)option {
-#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 90100)
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000)
     if ([QNUploadManager checkAndNotifyError:key token:token input:assetResource complete:completionHandler]) {
         return;
     }

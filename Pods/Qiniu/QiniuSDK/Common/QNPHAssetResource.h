@@ -10,7 +10,8 @@
 
 #import "QNFileDelegate.h"
 
-#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 90100)
+API_AVAILABLE_BEGIN(ios(9))
+API_UNAVAILABLE_BEGIN(macos, tvos)
 
 @class PHAssetResource;
 
@@ -19,7 +20,7 @@
 /**
  *    打开指定文件
  *
- *    @param path      PHLivePhoto的PHAssetResource文件
+ *    @param phAssetResource      PHLivePhoto的PHAssetResource文件
  *    @param error     输出的错误信息
  *
  *    @return 实例
@@ -28,4 +29,6 @@
                error:(NSError *__autoreleasing *)error;
 
 @end
-#endif
+
+API_AVAILABLE_END
+API_UNAVAILABLE_END
