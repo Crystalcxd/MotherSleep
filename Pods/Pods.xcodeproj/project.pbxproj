@@ -1052,6 +1052,7 @@
 		7EB7268E4C7B76CDCD7A3452F8F28C0E /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DALabeledCircularProgressView.h; path = DACircularProgress/DALabeledCircularProgressView.h; sourceTree = "<group>"; };
 		7EC67AE05CAA4784FF84AA4F678CAC7D /* ShareSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = SDK/ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
 		800905255259F42ADCDD40F81A8F9632 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		80268384C7713A96F1CEACC20813A22E /* libjcore-ios-2.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.0.a"; sourceTree = "<group>"; };
 		808B78FE75A220FAD382E604E600F654 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		8156913F15BBE607E728F30DC1E3DB53 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		81E546086ABEBA1BBBB5544634DE686D /* QN_GTM_Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QN_GTM_Base64.m; path = QiniuSDK/Common/QN_GTM_Base64.m; sourceTree = "<group>"; };
@@ -1304,7 +1305,6 @@
 		E5BE37F2EE301678563D943566CAB0F9 /* QNEtag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNEtag.h; path = QiniuSDK/Common/QNEtag.h; sourceTree = "<group>"; };
 		E5EB35D1B4EDE83AC5F7457AA31586E9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		E62AF49F2A30620B8B5DA449B4DD2A90 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		E640793AE1D4E63F70F622B85475CBE1 /* libjcore-ios-2.1.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.8.a"; sourceTree = "<group>"; };
 		E6998964C6C5C56F6CCEBDB2F5646192 /* ELCImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELCImagePickerController.debug.xcconfig; sourceTree = "<group>"; };
 		E77F1329D1ED732881BB13B497D28A15 /* ELCImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELCImagePickerController-dummy.m"; sourceTree = "<group>"; };
 		EA5D58454607256BF88847C721A68BD5 /* DACircularProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DACircularProgress.debug.xcconfig; sourceTree = "<group>"; };
@@ -1533,6 +1533,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0239F15652B0AF749D479B608BF23D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80268384C7713A96F1CEACC20813A22E /* libjcore-ios-2.2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11BB3FE3ECADE8AA47924B02A6F587F7 /* pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -2855,14 +2863,6 @@
 			path = "../Target Support Files/MiPushSDK";
 			sourceTree = "<group>";
 		};
-		E5CF29FA3F5C7E3D8F5660367C12CCCF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E640793AE1D4E63F70F622B85475CBE1 /* libjcore-ios-2.1.8.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E61DA1BF7F45E4F5C882D2AFE84683C5 /* TTTAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2877,7 +2877,7 @@
 		EA6D80BDC12F91E45E9AF273D45AEBFD /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				E5CF29FA3F5C7E3D8F5660367C12CCCF /* Frameworks */,
+				0239F15652B0AF749D479B608BF23D2D /* Frameworks */,
 				2F556DE9815F9F5365BFEABBAB734F84 /* Support Files */,
 			);
 			name = JCore;

@@ -25,7 +25,7 @@ PODS:
   - GBDeviceInfo/Core (6.3.0)
   - GVUserDefaults (1.0.2)
   - HMSegmentedControl (1.5.5)
-  - JCore (2.1.8)
+  - JCore (2.2.0)
   - JPush (3.2.8):
     - JCore (< 3.0.0, >= 2.0.0)
   - Mantle (2.1.1):
@@ -149,7 +149,7 @@ SPEC CHECKSUMS:
   GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: a7f1dead960d77a97717c73ea8b0aa5b33706491
+  JCore: dd8877f3adea559b60afdb0c77a8fa771c03b649
   JPush: 8ce888d6dedfa417e90c8b6bc87405a16ce2e699
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -175,4 +175,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4a075f0972b29d2bc15f62ce77b80331f6489000
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.9.0.beta.3
