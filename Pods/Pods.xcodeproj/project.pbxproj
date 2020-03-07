@@ -778,6 +778,7 @@
 		0663E9BBFFF0E761C2CB4A7D487F83F5 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		079C2E9ACE31292D23487E08AD9B6A22 /* libPods-MotherSleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MotherSleep.a"; path = "libPods-MotherSleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909A092BB7D42FE3A92D28105903F6F /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		0A652F34D1E9FF13C5CF7E3B434876FC /* libjcore-ios-2.2.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.2.a"; sourceTree = "<group>"; };
 		0B1C2BCC3902618FD3C09FF124CF75DA /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		0B3E4BFAE0120D9F4AD810FA5EC4E2C8 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
 		0B3F35D56DDC70FB5550161909B3BD8B /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
@@ -829,6 +830,7 @@
 		1EA6C6A43348E3D762D840EF375D25E5 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		1EF5F179098E7BC46A4E5AF733263F41 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		1F105D4793387D3140F40FFF5EF60A0F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		1F800DD5BF94A05C7A3BD8006169C614 /* libjpush-ios-3.3.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.3.0.a"; sourceTree = "<group>"; };
 		1FB4D53836B8D4AE3E3C1B4178464BDF /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2057178A3EF12458157D3A31D20D83C2 /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTypingIndicatorView.m; path = Source/SLKTypingIndicatorView.m; sourceTree = "<group>"; };
@@ -912,7 +914,6 @@
 		3F91C4E10CD801439E4F7C7F3DBDDE5C /* libSlackTextViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSlackTextViewController.a; path = libSlackTextViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4055E3789D9F220EA1AC189992FF27FC /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		40D6DE6D260AAFE5E12C77B2554B20E5 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		413FCA5B911AC414E253AC47C0B7CC1A /* libjpush-ios-3.2.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.8.a"; sourceTree = "<group>"; };
 		41FE5217CEE8D5F0A4627F169EFC6245 /* RegexKitLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegexKitLite-prefix.pch"; sourceTree = "<group>"; };
 		420554E62501F694C0132254AD0C6D22 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
 		420E77438B90253F6C58BFDAF44B38E8 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
@@ -1052,7 +1053,6 @@
 		7EB7268E4C7B76CDCD7A3452F8F28C0E /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DALabeledCircularProgressView.h; path = DACircularProgress/DALabeledCircularProgressView.h; sourceTree = "<group>"; };
 		7EC67AE05CAA4784FF84AA4F678CAC7D /* ShareSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = SDK/ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
 		800905255259F42ADCDD40F81A8F9632 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		80268384C7713A96F1CEACC20813A22E /* libjcore-ios-2.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.0.a"; sourceTree = "<group>"; };
 		808B78FE75A220FAD382E604E600F654 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		8156913F15BBE607E728F30DC1E3DB53 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		81E546086ABEBA1BBBB5544634DE686D /* QN_GTM_Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QN_GTM_Base64.m; path = QiniuSDK/Common/QN_GTM_Base64.m; sourceTree = "<group>"; };
@@ -1533,14 +1533,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0239F15652B0AF749D479B608BF23D2D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				80268384C7713A96F1CEACC20813A22E /* libjcore-ios-2.2.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		11BB3FE3ECADE8AA47924B02A6F587F7 /* pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -1648,6 +1640,14 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		195C226D2E2585FAF0E6C32AADCFDFDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A652F34D1E9FF13C5CF7E3B434876FC /* libjcore-ios-2.2.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1BD2980F6271E8301A30872801B5EAE0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1720,6 +1720,14 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
+		245583322931461BCBA3B2ADA3360B79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F800DD5BF94A05C7A3BD8006169C614 /* libjpush-ios-3.3.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		269D2CAB647557D7D071B3C293D0B721 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1736,7 +1744,7 @@
 			isa = PBXGroup;
 			children = (
 				B429F6680BB664F708E5289D521056AA /* JPUSHService.h */,
-				E171CC425D9553097D50096E46D642EC /* Frameworks */,
+				245583322931461BCBA3B2ADA3360B79 /* Frameworks */,
 				46420467D25704D1B3969D2F04B8FAE7 /* Support Files */,
 			);
 			name = JPush;
@@ -2825,14 +2833,6 @@
 			path = "../Target Support Files/UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
-		E171CC425D9553097D50096E46D642EC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				413FCA5B911AC414E253AC47C0B7CC1A /* libjpush-ios-3.2.8.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E2A392B54D63E193E6BF6E6AA95613FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2877,7 +2877,7 @@
 		EA6D80BDC12F91E45E9AF273D45AEBFD /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				0239F15652B0AF749D479B608BF23D2D /* Frameworks */,
+				195C226D2E2585FAF0E6C32AADCFDFDF /* Frameworks */,
 				2F556DE9815F9F5365BFEABBAB734F84 /* Support Files */,
 			);
 			name = JCore;

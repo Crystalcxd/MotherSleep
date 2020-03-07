@@ -25,8 +25,8 @@ PODS:
   - GBDeviceInfo/Core (6.3.0)
   - GVUserDefaults (1.0.2)
   - HMSegmentedControl (1.5.5)
-  - JCore (2.2.0)
-  - JPush (3.2.8):
+  - JCore (2.2.2)
+  - JPush (3.3.0):
     - JCore (< 3.0.0, >= 2.0.0)
   - Mantle (2.1.1):
     - Mantle/extobjc (= 2.1.1)
@@ -35,7 +35,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.3.1)
-  - MOBFoundation (3.2.8)
+  - MOBFoundation (3.2.10)
   - pop (1.0.12)
   - Qiniu (7.3.2)
   - RDVTabBarController (1.3.0)
@@ -149,14 +149,14 @@ SPEC CHECKSUMS:
   GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: dd8877f3adea559b60afdb0c77a8fa771c03b649
-  JPush: 8ce888d6dedfa417e90c8b6bc87405a16ce2e699
+  JCore: 2e6690b41b1b59c4a768e0a3187c311911c02ca8
+  JPush: 65cd9d8cb050b6d8c95736517d846fac2f53c134
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  MOBFoundation: 2dc0a63371eccccabef13b1df3fe57564003bc85
+  MOBFoundation: e224d709cca757a6a5a4220ed4c9c6280042c8ba
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: a248627a07bb8a39c6a11ae8059b7161c363539b
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
