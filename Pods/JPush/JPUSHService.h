@@ -9,7 +9,7 @@
  * Copyright (c) 2011 ~ 2017 Shenzhen HXHG. All rights reserved.
  */
 
-#define JPUSH_VERSION_NUMBER 3.3.0
+#define JPUSH_VERSION_NUMBER 3.3.2
 
 #import <Foundation/Foundation.h>
 
@@ -219,11 +219,26 @@ typedef NS_ENUM(NSUInteger, JPAuthorizationStatus) {
 
 + (void)registerDeviceToken:(NSData *)deviceToken;
 
-
 /*!
  * @abstract 处理收到的 APNs 消息
  */
 + (void)handleRemoteNotification:(NSDictionary *)remoteInfo;
+
+/*!
+ * @abstract  向极光服务器提交Token
+ *
+ * @param voipToken 推送使用的Voip Token
+ */
++ (void)registerVoipToken:(NSData *)voipToken;
+
+
+/*!
+ * @abstract  处理收到的 Voip 消息
+ *
+ * @param remoteInfo 下发的 Voip 内容
+ */
++ (void)handleVoipNotification:(NSDictionary *)remoteInfo;
+
 
 /*!
 * @abstract 检测通知授权状态
@@ -617,6 +632,14 @@ typedef NS_ENUM(NSUInteger, JPAuthorizationStatus) {
  * 建议在发布的版本里, 调用此接口, 关闭掉日志打印.
  */
 + (void)setLogOFF;
+
+/*!
+ * @abstract 设置SDK地理位置权限开关
+ *
+ * @discussion 关闭地理位置之后，SDK地理围栏的相关功能将受到影响，默认是开启。
+ *
+ */
++ (void)setLocationEanable:(BOOL)isEanble;
 
 ///----------------------------------------------------
 ///********************下列方法已过期********************
