@@ -10,12 +10,8 @@
 
 #import "QNFileDelegate.h"
 
-API_AVAILABLE_BEGIN(ios(9))
-API_UNAVAILABLE_BEGIN(macos, tvos)
-
 @class PHAssetResource;
-
-@interface QNPHAssetResource : NSObject <QNFileDelegate>
+API_AVAILABLE(ios(9.0)) @interface QNPHAssetResource : NSObject <QNFileDelegate>
 
 /**
  *    打开指定文件
@@ -29,6 +25,3 @@ API_UNAVAILABLE_BEGIN(macos, tvos)
                error:(NSError *__autoreleasing *)error;
 
 @end
-
-API_AVAILABLE_END
-API_UNAVAILABLE_END
