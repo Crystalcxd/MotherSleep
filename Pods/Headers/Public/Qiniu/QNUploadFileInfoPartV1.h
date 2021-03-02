@@ -1,0 +1,1 @@
+../../../Qiniu/QiniuSDK/Storage/QNUploadFileInfoPartV1.h

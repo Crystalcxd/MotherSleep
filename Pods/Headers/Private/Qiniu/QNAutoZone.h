@@ -1,0 +1,1 @@
+../../../Qiniu/QiniuSDK/Common/QNAutoZone.h

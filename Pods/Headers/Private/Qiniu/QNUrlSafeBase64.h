@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNUrlSafeBase64.h
+../../../Qiniu/QiniuSDK/Utils/QNUrlSafeBase64.h

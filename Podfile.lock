@@ -14,30 +14,101 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.14.0):
-    - Fabric (~> 1.10.2)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.10.2)
-  - GBDeviceInfo (6.3.0):
-    - GBDeviceInfo/Core (= 6.3.0)
-  - GBDeviceInfo/Core (6.3.0)
+  - Firebase/Analytics (6.34.0):
+    - Firebase/Core
+  - Firebase/Core (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.9.0)
+  - Firebase/CoreOnly (6.34.0):
+    - FirebaseCore (= 6.10.4)
+  - Firebase/Crashlytics (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.6.2)
+  - FirebaseAnalytics (6.9.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.7)
+    - GoogleAppMeasurement (= 6.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - FirebaseCore (6.10.4):
+    - FirebaseCoreDiagnostics (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.7.0):
+    - GoogleDataTransport (~> 7.4)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30906.0)
+  - FirebaseCrashlytics (4.6.2):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleDataTransport (~> 7.2)
+    - nanopb (~> 1.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - GBDeviceInfo (6.6.0):
+    - GBDeviceInfo/Core (= 6.6.0)
+  - GBDeviceInfo/Core (6.6.0)
+  - GoogleAppMeasurement (6.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - GoogleDataTransport (7.5.1):
+    - nanopb (~> 1.30906.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
   - GVUserDefaults (1.0.2)
+  - HappyDNS (0.3.17)
   - HMSegmentedControl (1.5.6)
-  - JCore (2.2.5)
-  - JPush (3.3.3):
+  - JCore (2.4.0)
+  - JPush (3.4.0):
     - JCore (< 3.0.0, >= 2.0.0)
-  - Mantle (2.1.1):
-    - Mantle/extobjc (= 2.1.1)
-  - Mantle/extobjc (2.1.1)
+  - Mantle (2.1.6):
+    - Mantle/extobjc (= 2.1.6)
+  - Mantle/extobjc (2.1.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
-  - MJRefresh (3.4.3)
-  - MOBFoundation (3.2.16)
+  - MJRefresh (3.5.0)
+  - MOBFoundation (3.2.24)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
   - pop (1.0.12)
-  - Qiniu (7.3.5)
+  - PromisesObjC (1.2.10)
+  - Qiniu (8.2.0):
+    - HappyDNS (~> 0.3.17)
   - RDVTabBarController (1.3.0)
   - RegexKitLite (4.0)
   - SCLAlertView-Objective-C (1.1.6)
@@ -69,11 +140,11 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Crashlytics
   - DACircularProgress
   - DateTools
   - ELCImagePickerController
-  - Fabric
+  - Firebase/Analytics
+  - Firebase/Crashlytics
   - GBDeviceInfo
   - GVUserDefaults
   - HMSegmentedControl
@@ -107,13 +178,21 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - Crashlytics
     - DACircularProgress
     - DateTools
     - ELCImagePickerController
-    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
     - GBDeviceInfo
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
     - GVUserDefaults
+    - HappyDNS
     - HMSegmentedControl
     - JCore
     - JPush
@@ -123,7 +202,9 @@ SPEC REPOS:
     - MiPushSDK
     - MJRefresh
     - MOBFoundation
+    - nanopb
     - pop
+    - PromisesObjC
     - Qiniu
     - RDVTabBarController
     - RegexKitLite
@@ -141,24 +222,34 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
-  GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
+  Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
+  FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
+  FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
+  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseCrashlytics: 1a747c9cc084a24dc6d9511c991db1cd078154eb
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  GBDeviceInfo: ed0db16230d2fa280e1cbb39a5a7f60f6946aaec
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
+  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  HappyDNS: 848ef73e24f2b0e2752064223ce2dc0dd88900ea
   HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
-  JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
-  JPush: 61b3dc8c2bdefb7c48e7ca283f9fe42e71bfe063
-  Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
+  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
+  JPush: defaa108c38806f6efdcfaf4c416854d25fca8e5
+  Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
-  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
-  MOBFoundation: 204917a048271f7300434a2067ce2d4d149d124b
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  Qiniu: 9d20cbf08a3bcf9d01869626f3c2a23a1b842f65
+  PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  Qiniu: 95e913e7ab91f6c4dff643164e8d66a7f79c5c5e
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SCLAlertView-Objective-C: 2bb9be204bffaf24762a0e33fe6ca9645819b3b7
@@ -173,6 +264,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4a075f0972b29d2bc15f62ce77b80331f6489000
+PODFILE CHECKSUM: 35096fe987ba097d9154de3c1e2b4b93cd7fb329
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

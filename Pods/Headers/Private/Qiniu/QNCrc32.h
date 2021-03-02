@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNCrc32.h
+../../../Qiniu/QiniuSDK/Utils/QNCrc32.h

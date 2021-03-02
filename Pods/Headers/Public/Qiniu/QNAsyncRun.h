@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNAsyncRun.h
+../../../Qiniu/QiniuSDK/Utils/QNAsyncRun.h

@@ -6,48 +6,229 @@
 //  Copyright © 2020 Qiniu. All rights reserved.
 //
 
+#import "QNZoneInfo.h"
+#import "QNResponseInfo.h"
+#import "QNDefine.h"
 #import "QNBaseUpload.h"
+#import "QNUploadDomainRegion.h"
 
 @interface QNBaseUpload ()
+
+@property (nonatomic, strong) QNBaseUpload *strongSelf;
+
+@property (nonatomic,   copy) NSString *key;
+@property (nonatomic,   copy) NSString *fileName;
+@property (nonatomic, strong) NSData *data;
+@property (nonatomic, strong) id <QNFileDelegate> file;
+@property (nonatomic, strong) QNUpToken *token;
+@property (nonatomic,   copy) NSString *identifier;
+@property (nonatomic, strong) QNUploadOption *option;
+@property (nonatomic, strong) QNConfiguration *config;
+@property (nonatomic, strong) id <QNRecorderDelegate> recorder;
+@property (nonatomic,   copy) NSString *recorderKey;
+@property (nonatomic, strong) QNUpTaskCompletionHandler completionHandler;
+
+@property (nonatomic, assign)NSInteger currentRegionIndex;
+@property (nonatomic, strong)NSMutableArray <id <QNUploadRegion> > *regions;
+
+@property (nonatomic, strong)QNUploadRegionRequestMetrics *currentRegionRequestMetrics;
 
 @end
 
 @implementation QNBaseUpload
 
-- (void)run {
-    // rewrite by subclass
+- (instancetype)initWithFile:(id<QNFileDelegate>)file
+                         key:(NSString *)key
+                       token:(QNUpToken *)token
+                      option:(QNUploadOption *)option
+               configuration:(QNConfiguration *)config
+                    recorder:(id<QNRecorderDelegate>)recorder
+                 recorderKey:(NSString *)recorderKey
+           completionHandler:(QNUpTaskCompletionHandler)completionHandler{
+    return [self initWithFile:file data:nil fileName:[[file path] lastPathComponent] key:key token:token option:option configuration:config recorder:recorder recorderKey:recorderKey completionHandler:completionHandler];
 }
 
-- (void)collectHttpResponseInfo:(QNHttpResponseInfo *)httpResponseInfo fileOffset:(uint64_t)fileOffset {
-    
-    QNZonesInfo *zonesInfo = [self.config.zone getZonesInfoWithToken:self.token];
-    NSString *targetRegionId = [zonesInfo getZoneInfoRegionNameWithType:QNZoneInfoTypeMain];
-    NSString *currentRegionId = [zonesInfo getZoneInfoRegionNameWithType:self.currentZoneType];
-    
-    [Collector addRequestWithType:self.requestType httpResponseInfo:httpResponseInfo fileOffset:fileOffset targetRegionId:targetRegionId currentRegionId:currentRegionId identifier:self.identifier];
-    
-    uint64_t bytesSent;
-    if (self.requestType == QNRequestType_mkblk || self.requestType == QNRequestType_bput) {
-        if (httpResponseInfo.hasHttpResponse) {
-            bytesSent = httpResponseInfo.bytesTotal;
+- (instancetype)initWithData:(NSData *)data
+                         key:(NSString *)key
+                    fileName:(NSString *)fileName
+                       token:(QNUpToken *)token
+                      option:(QNUploadOption *)option
+               configuration:(QNConfiguration *)config
+           completionHandler:(QNUpTaskCompletionHandler)completionHandler{
+    return [self initWithFile:nil data:data fileName:fileName key:key token:token option:option configuration:config recorder:nil recorderKey:nil completionHandler:completionHandler];
+}
+
+- (instancetype)initWithFile:(id<QNFileDelegate>)file
+                        data:(NSData *)data
+                    fileName:(NSString *)fileName
+                         key:(NSString *)key
+                       token:(QNUpToken *)token
+                      option:(QNUploadOption *)option
+               configuration:(QNConfiguration *)config
+                    recorder:(id<QNRecorderDelegate>)recorder
+                 recorderKey:(NSString *)recorderKey
+           completionHandler:(QNUpTaskCompletionHandler)completionHandler{
+    if (self = [super init]) {
+        _file = file;
+        _data = data;
+        _fileName = fileName ?: @"?";
+        _key = key;
+        _token = token;
+        _config = config;
+        _option = option ?: [QNUploadOption defaultOptions];
+        _recorder = recorder;
+        _recorderKey = recorderKey;
+        _completionHandler = completionHandler;
+        [self initData];
+    }
+    return self;
+}
+
+- (instancetype)init{
+    if (self = [super init]) {
+        [self initData];
+    }
+    return self;
+}
+
+- (void)initData{
+    _strongSelf = self;
+    _currentRegionIndex = 0;
+    _metrics = [QNUploadTaskMetrics emptyMetrics];
+}
+
+- (void)run {
+    kQNWeakSelf;
+    [_config.zone preQuery:self.token on:^(int code, QNResponseInfo *responseInfo, QNUploadRegionRequestMetrics *metrics) {
+        kQNStrongSelf;
+        [self.metrics addMetrics:metrics];
+        if (code == 0) {
+            int prepareCode = [self prepareToUpload];
+            if (prepareCode == 0) {
+                [self startToUpload];
+            } else {
+                QNResponseInfo *responseInfoP = [QNResponseInfo errorResponseInfo:prepareCode errorDesc:nil];
+                [self complete:responseInfoP response:responseInfoP.responseDictionary];
+            }
         } else {
-            bytesSent = 0;
+            [self complete:responseInfo response:responseInfo.responseDictionary];
         }
-        [Collector append:CK_blockBytesSent value:@(bytesSent) identifier:self.identifier];
-    } else {
-        bytesSent = httpResponseInfo.bytesSent;
+    }];
+}
+
+- (int)prepareToUpload{
+    int ret = 0;
+    if (![self setupRegions]) {
+        ret = -1;
+    }
+    return ret;
+}
+
+- (void)startToUpload{
+}
+
+- (BOOL)switchRegionAndUpload{
+    if (self.currentRegionRequestMetrics) {
+        [self.metrics addMetrics:self.currentRegionRequestMetrics];
+        self.currentRegionRequestMetrics = nil;
+    }
+    BOOL isSwitched = [self switchRegion];
+    if (isSwitched) {
+        [self startToUpload];
+    }
+    return isSwitched;
+}
+
+// 根据错误信息进行切换region并上传，return:是否切换region并上传
+- (BOOL)switchRegionAndUploadIfNeededWithErrorResponse:(QNResponseInfo *)errorResponseInfo {
+    if (!errorResponseInfo || errorResponseInfo.isOK || // 不存在 || 不是error 不切
+        !errorResponseInfo.couldRetry || ![self.config allowBackupHost] ||  // 不能重试不切
+        ![self switchRegionAndUpload]) { // 切换失败
+        return NO;
+    }
+
+    return YES;
+}
+
+- (void)complete:(QNResponseInfo *)info
+        response:(NSDictionary *)response{
+    if (self.currentRegionRequestMetrics) {
+        [self.metrics addMetrics:self.currentRegionRequestMetrics];
+    }
+    if (self.completionHandler) {
+        self.completionHandler(info, _key, _metrics, response);
+    }
+    self.strongSelf = nil;
+}
+
+//MARK:-- region
+- (BOOL)setupRegions{
+    NSMutableArray *defaultRegions = [NSMutableArray array];
+    NSArray *zoneInfos = [self.config.zone getZonesInfoWithToken:self.token].zonesInfo;
+    for (QNZoneInfo *zoneInfo in zoneInfos) {
+        QNUploadDomainRegion *region = [[QNUploadDomainRegion alloc] init];
+        [region setupRegionData:zoneInfo];
+        if (region.isValid) {
+            [defaultRegions addObject:region];
+        }
+    }
+    self.regions = defaultRegions;
+    self.metrics.regions = defaultRegions;
+    return defaultRegions.count > 0;
+}
+
+- (void)insertRegionAtFirst:(id <QNUploadRegion>)region{
+    BOOL hasRegion = NO;
+    for (id <QNUploadRegion> regionP in self.regions) {
+        if ([regionP.zoneInfo.regionId isEqualToString:region.zoneInfo.regionId]) {
+            hasRegion = YES;
+            break;
+        }
+    }
+    if (!hasRegion) {
+        [self.regions insertObject:region atIndex:0];
+    }
+}
+
+- (BOOL)switchRegion{
+    BOOL ret = NO;
+    @synchronized (self) {
+        NSInteger regionIndex = _currentRegionIndex + 1;
+        if (regionIndex < self.regions.count) {
+            _currentRegionIndex = regionIndex;
+            ret = YES;
+        }
+    }
+    return ret;
+}
+
+- (id <QNUploadRegion>)getTargetRegion{
+    return self.regions.firstObject;
+}
+
+- (id <QNUploadRegion>)getCurrentRegion{
+    id <QNUploadRegion> region = nil;
+    @synchronized (self) {
+        if (self.currentRegionIndex < self.regions.count) {
+            region = self.regions[self.currentRegionIndex];
+        }
+    }
+    return region;
+}
+
+- (void)addRegionRequestMetricsOfOneFlow:(QNUploadRegionRequestMetrics *)metrics{
+    if (metrics == nil) {
+        return;
     }
     
-    [Collector append:CK_totalBytesSent value:@(bytesSent) identifier:self.identifier];
+    @synchronized (self) {
+        if (self.currentRegionRequestMetrics == nil) {
+            self.currentRegionRequestMetrics = metrics;
+            return;
+        }
+    }
+    
+    [self.currentRegionRequestMetrics addMetrics:metrics];
 }
 
-- (void)collectUploadQualityInfo {
-    
-    QNZonesInfo *zonesInfo = [self.config.zone getZonesInfoWithToken:self.token];
-    NSString *targetRegionId = [zonesInfo getZoneInfoRegionNameWithType:QNZoneInfoTypeMain];
-    NSString *currentRegionId = [zonesInfo getZoneInfoRegionNameWithType:self.currentZoneType];
-    [Collector update:CK_targetRegionId value:targetRegionId identifier:self.identifier];
-    [Collector update:CK_currentRegionId value:currentRegionId identifier:self.identifier];
-    [Collector update:CK_fileSize value:@(self.size) identifier:self.identifier];
-}
 @end

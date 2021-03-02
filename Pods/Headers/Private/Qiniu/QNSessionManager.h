@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Http/QNSessionManager.h
+../../../Qiniu/QiniuSDK/BigData/QNSessionManager.h

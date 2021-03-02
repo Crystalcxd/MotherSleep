@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNALAssetFile.h
+../../../Qiniu/QiniuSDK/Utils/QNALAssetFile.h

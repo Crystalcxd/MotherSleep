@@ -47,7 +47,9 @@ pod 'DateTools' # 日期时间工具
 pod 'GBDeviceInfo' # 设备信息
 pod 'Valet' # keychain
 pod 'pop'
-pod 'Fabric'
-pod 'Crashlytics'
+pod 'Firebase/Crashlytics'
+
+# Recommended: Add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
 
 end

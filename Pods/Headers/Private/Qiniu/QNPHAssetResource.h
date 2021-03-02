@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNPHAssetResource.h
+../../../Qiniu/QiniuSDK/Utils/QNPHAssetResource.h

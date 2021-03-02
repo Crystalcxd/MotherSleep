@@ -1,0 +1,1 @@
+../../../Qiniu/QiniuSDK/Transaction/QNTransactionManager.h

@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNFileDelegate.h
+../../../Qiniu/QiniuSDK/Utils/QNFileDelegate.h

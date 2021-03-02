@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNFile.h
+../../../Qiniu/QiniuSDK/Utils/QNFile.h

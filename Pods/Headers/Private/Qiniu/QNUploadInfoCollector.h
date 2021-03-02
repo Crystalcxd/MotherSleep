@@ -1,1 +1,0 @@
-../../../Qiniu/QiniuSDK/Storage/QNUploadInfoCollector.h

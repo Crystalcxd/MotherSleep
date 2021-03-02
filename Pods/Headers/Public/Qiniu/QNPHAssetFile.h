@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNPHAssetFile.h
+../../../Qiniu/QiniuSDK/Utils/QNPHAssetFile.h

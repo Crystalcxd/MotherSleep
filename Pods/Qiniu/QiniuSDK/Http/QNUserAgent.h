@@ -13,6 +13,7 @@
  *
  */
 
+#define kQNUserAgent [QNUserAgent sharedInstance]
 @interface QNUserAgent : NSObject
 
 /**
@@ -27,6 +28,7 @@
 
 /**
  *    UserAgent + AK 字串
+ *    @param access access信息
  */
 - (NSString *)getUserAgent:(NSString *)access;
 

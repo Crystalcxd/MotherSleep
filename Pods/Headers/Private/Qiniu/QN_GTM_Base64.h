@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QN_GTM_Base64.h
+../../../Qiniu/QiniuSDK/Utils/QN_GTM_Base64.h

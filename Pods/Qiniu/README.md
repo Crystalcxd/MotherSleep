@@ -2,9 +2,10 @@
 
 [![@qiniu on weibo](http://img.shields.io/badge/weibo-%40qiniutek-blue.svg)](http://weibo.com/qiniutek)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
-[![Build Status](https://travis-ci.org/qiniu/objc-sdk.svg?branch=master)](https://travis-ci.org/qiniu/objc-sdk)
+[![Build Status](https://github.com/qiniu/objc-sdk/workflows/Run%20Test%20Cases/badge.svg)](https://github.com/qiniu/objc-sdk/actions)
+[![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/Qiniu/badge.png)](http://cocoadocs.org/docsets/Qiniu)
+[![GitHub release](https://img.shields.io/github/v/tag/qiniu/objc-sdk.svg?label=release)](https://github.com/qiniu/objc-sdk/releases)
 [![codecov](https://codecov.io/gh/qiniu/objc-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/qiniu/objc-sdk)
-[![Latest Stable Version](http://img.shields.io/cocoapods/v/Qiniu.svg)](https://github.com/qiniu/objc-sdk/releases)
 ![Platform](http://img.shields.io/cocoapods/p/Qiniu.svg)
 
 
@@ -13,13 +14,18 @@
 通过 CocoaPods
 
 ```ruby
-pod "Qiniu", "~> 7.3" 
+pod "Qiniu", "~> 8.2.0" 
 ```
 
 ## 运行环境
 
 |               Qiniu SDK 版本               | 最低 iOS版本 | 最低 OS X 版本 |     Notes     |
 | :--------------------------------------: | :------: | :--------: | :-----------: |
+|                  8.2.x                   |  iOS 7   | OS X 10.14  | Xcode 最低版本 11 |
+|                  8.1.x                   |  iOS 7   | OS X 10.14  | Xcode 最低版本 11 |
+|                  8.0.x                   |  iOS 7   | OS X 10.14  | Xcode 最低版本 11 |
+|                  7.5.x                   |  iOS 7   | OS X 10.9  | Xcode 最低版本 6. |
+|                  7.4.x                   |  iOS 7   | OS X 10.9  | Xcode 最低版本 6. |
 |                  7.3.x                   |  iOS 7   | OS X 10.9  | Xcode 最低版本 6. |
 |                  7.2.x                   |  iOS 7   | OS X 10.9  | Xcode 最低版本 6. |
 |         7.1.x / AFNetworking-3.x         |  iOS 7   | OS X 10.9  | Xcode 最低版本 6. |

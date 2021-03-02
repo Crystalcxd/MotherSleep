@@ -1,1 +1,1 @@
-../../../Qiniu/QiniuSDK/Common/QNEtag.h
+../../../Qiniu/QiniuSDK/Utils/QNEtag.h

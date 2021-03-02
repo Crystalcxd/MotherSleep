@@ -17,7 +17,13 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+#include <TargetConditionals.h>
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+
 #import "GBDeviceInfo_iOS.h"
+
+#import <UIKit/UIKit.h>
 
 #import <sys/utsname.h>
 #import "dlfcn.h"
@@ -233,6 +239,21 @@
 
                 // 11 Pro Max
                 @[@12, @5]: @[@(GBDeviceModeliPhone11ProMax), @"iPhone 11 Pro Max", @(GBDeviceDisplay6p5Inch), @458],
+
+                // SE 2
+                @[@12, @8]: @[@(GBDeviceModeliPhoneSE2), @"iPhone SE 2", @(GBDeviceDisplay4p7Inch), @326],
+
+                // 12 mini
+                @[@13, @1]: @[@(GBDeviceModeliPhone12Mini), @"iPhone 12 mini", @(GBDeviceDisplay5p4Inch), @476],
+
+                // 12
+                @[@13, @2]: @[@(GBDeviceModeliPhone12), @"iPhone 12", @(GBDeviceDisplay6p1Inch), @460],
+
+                // 12 Pro
+                @[@13, @3]: @[@(GBDeviceModeliPhone12Pro), @"iPhone 12 Pro", @(GBDeviceDisplay6p1Inch), @460],
+
+                // 12 Pro Max
+                @[@13, @4]: @[@(GBDeviceModeliPhone12ProMax), @"iPhone 12 Pro Max", @(GBDeviceDisplay6p7Inch), @458],
             },
             @"iPad": @{
                 // 1
@@ -244,10 +265,10 @@
                 @[@2, @3]: @[@(GBDeviceModeliPad2), @"iPad 2", @(GBDeviceDisplay9p7Inch), @132],
                 @[@2, @4]: @[@(GBDeviceModeliPad2), @"iPad 2", @(GBDeviceDisplay9p7Inch), @132],
 
-                // Mini
-                @[@2, @5]: @[@(GBDeviceModeliPadMini1), @"iPad Mini 1", @(GBDeviceDisplay7p9Inch), @163],
-                @[@2, @6]: @[@(GBDeviceModeliPadMini1), @"iPad Mini 1", @(GBDeviceDisplay7p9Inch), @163],
-                @[@2, @7]: @[@(GBDeviceModeliPadMini1), @"iPad Mini 1", @(GBDeviceDisplay7p9Inch), @163],
+                // mini
+                @[@2, @5]: @[@(GBDeviceModeliPadMini1), @"iPad mini 1", @(GBDeviceDisplay7p9Inch), @163],
+                @[@2, @6]: @[@(GBDeviceModeliPadMini1), @"iPad mini 1", @(GBDeviceDisplay7p9Inch), @163],
+                @[@2, @7]: @[@(GBDeviceModeliPadMini1), @"iPad mini 1", @(GBDeviceDisplay7p9Inch), @163],
 
                 // 3
                 @[@3, @1]: @[@(GBDeviceModeliPad3), @"iPad 3", @(GBDeviceDisplay9p7Inch), @264],
@@ -264,19 +285,19 @@
                 @[@4, @2]: @[@(GBDeviceModeliPadAir1), @"iPad Air 1", @(GBDeviceDisplay9p7Inch), @264],
                 @[@4, @3]: @[@(GBDeviceModeliPadAir1), @"iPad Air 1", @(GBDeviceDisplay9p7Inch), @264],
 
-                // Mini 2
-                @[@4, @4]: @[@(GBDeviceModeliPadMini2), @"iPad Mini 2", @(GBDeviceDisplay7p9Inch), @326],
-                @[@4, @5]: @[@(GBDeviceModeliPadMini2), @"iPad Mini 2", @(GBDeviceDisplay7p9Inch), @326],
-                @[@4, @6]: @[@(GBDeviceModeliPadMini2), @"iPad Mini 2", @(GBDeviceDisplay7p9Inch), @326],
+                // mini 2
+                @[@4, @4]: @[@(GBDeviceModeliPadMini2), @"iPad mini 2", @(GBDeviceDisplay7p9Inch), @326],
+                @[@4, @5]: @[@(GBDeviceModeliPadMini2), @"iPad mini 2", @(GBDeviceDisplay7p9Inch), @326],
+                @[@4, @6]: @[@(GBDeviceModeliPadMini2), @"iPad mini 2", @(GBDeviceDisplay7p9Inch), @326],
 
-                // Mini 3
-                @[@4, @7]: @[@(GBDeviceModeliPadMini3), @"iPad Mini 3", @(GBDeviceDisplay7p9Inch), @326],
-                @[@4, @8]: @[@(GBDeviceModeliPadMini3), @"iPad Mini 3", @(GBDeviceDisplay7p9Inch), @326],
-                @[@4, @9]: @[@(GBDeviceModeliPadMini3), @"iPad Mini 3", @(GBDeviceDisplay7p9Inch), @326],
+                // mini 3
+                @[@4, @7]: @[@(GBDeviceModeliPadMini3), @"iPad mini 3", @(GBDeviceDisplay7p9Inch), @326],
+                @[@4, @8]: @[@(GBDeviceModeliPadMini3), @"iPad mini 3", @(GBDeviceDisplay7p9Inch), @326],
+                @[@4, @9]: @[@(GBDeviceModeliPadMini3), @"iPad mini 3", @(GBDeviceDisplay7p9Inch), @326],
                 
-                // Mini 4
-                @[@5, @1]: @[@(GBDeviceModeliPadMini4), @"iPad Mini 4", @(GBDeviceDisplay7p9Inch), @326],
-                @[@5, @2]: @[@(GBDeviceModeliPadMini4), @"iPad Mini 4", @(GBDeviceDisplay7p9Inch), @326],
+                // mini 4
+                @[@5, @1]: @[@(GBDeviceModeliPadMini4), @"iPad mini 4", @(GBDeviceDisplay7p9Inch), @326],
+                @[@5, @2]: @[@(GBDeviceModeliPadMini4), @"iPad mini 4", @(GBDeviceDisplay7p9Inch), @326],
 
                 // Air 2
                 @[@5, @3]: @[@(GBDeviceModeliPadAir2), @"iPad Air 2", @(GBDeviceDisplay9p7Inch), @264],
@@ -307,8 +328,8 @@
                 @[@7, @6]: @[@(GBDeviceModeliPad6), @"iPad 2018", @(GBDeviceDisplay9p7Inch), @264],
                 
                 // iPad 7th Gen, 2019
-                @[@7, @11]: @[@(GBDeviceModeliPad6), @"iPad 2019", @(GBDeviceDisplay10p2Inch), @264],
-                @[@7, @12]: @[@(GBDeviceModeliPad6), @"iPad 2019", @(GBDeviceDisplay10p2Inch), @264],
+                @[@7, @11]: @[@(GBDeviceModeliPad7), @"iPad 2019", @(GBDeviceDisplay10p2Inch), @264],
+                @[@7, @12]: @[@(GBDeviceModeliPad7), @"iPad 2019", @(GBDeviceDisplay10p2Inch), @264],
 
                 // iPad Pro 3rd Gen 11-inch, 2018
                 @[@8, @1]: @[@(GBDeviceModeliPadPro11p), @"iPad Pro 3rd Gen (11 inch, WiFi)", @(GBDeviceDisplay11pInch), @264],
@@ -326,13 +347,29 @@
                 @[@8, @6]: @[@(GBDeviceModeliPadPro12p9Inch31TB), @"iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", @(GBDeviceDisplay12p9Inch), @264],
                 @[@8, @8]: @[@(GBDeviceModeliPadPro12p9Inch31TB), @"iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", @(GBDeviceDisplay12p9Inch), @264],
                 
-                // Mini 5
-                @[@11, @1]: @[@(GBDeviceModeliPadMini5), @"iPad Mini 5", @(GBDeviceDisplay7p9Inch), @326],
-                @[@11, @2]: @[@(GBDeviceModeliPadMini5), @"iPad Mini 5", @(GBDeviceDisplay7p9Inch), @326],
+                // iPad Pro 4rd Gen 11-inch, 2020
+                @[@8, @9]: @[@(GBDeviceModeliPadPro11pInch4), @"iPad Pro 4rd Gen (11 inch, WiFi)", @(GBDeviceDisplay11pInch), @264],
+                @[@8, @10]: @[@(GBDeviceModeliPadPro11pInch4), @"iPad Pro 4rd Gen (11 inch, WiFi+Cellular)", @(GBDeviceDisplay11pInch), @264],
+
+                // iPad Pro 4rd Gen 12.9-inch, 2020
+                @[@8, @11]: @[@(GBDeviceModeliPadPro12p9Inch4), @"iPad Pro 4rd Gen (12.9 inch, WiFi)", @(GBDeviceDisplay12p9Inch), @264],
+                @[@8, @12]: @[@(GBDeviceModeliPadPro12p9Inch4), @"iPad Pro 4rd Gen (12.9 inch, WiFi+Cellular)", @(GBDeviceDisplay12p9Inch), @264],
+
+                // mini 5
+                @[@11, @1]: @[@(GBDeviceModeliPadMini5), @"iPad mini 5", @(GBDeviceDisplay7p9Inch), @326],
+                @[@11, @2]: @[@(GBDeviceModeliPadMini5), @"iPad mini 5", @(GBDeviceDisplay7p9Inch), @326],
                 
                 // Air 3
                 @[@11, @3]: @[@(GBDeviceModeliPadAir3), @"iPad Air 3", @(GBDeviceDisplay10p5Inch), @264],
                 @[@11, @4]: @[@(GBDeviceModeliPadAir3), @"iPad Air 3", @(GBDeviceDisplay10p5Inch), @264],
+
+                // iPad 8th Gen, 2020
+                @[@11, @6]: @[@(GBDeviceModeliPad8), @"iPad 2020", @(GBDeviceDisplay10p2Inch), @264],
+                @[@11, @7]: @[@(GBDeviceModeliPad8), @"iPad 2020", @(GBDeviceDisplay10p2Inch), @264],
+
+                // Air 4
+                @[@13, @1]: @[@(GBDeviceModeliPadAir4), @"iPad Air 4", @(GBDeviceDisplay10p9Inch), @264],
+                @[@13, @2]: @[@(GBDeviceModeliPadAir4), @"iPad Air 4", @(GBDeviceDisplay10p9Inch), @264],
             },
             @"iPod": @{
                 // 1st Gen
@@ -391,3 +428,5 @@
 }
 
 @end
+
+#endif
