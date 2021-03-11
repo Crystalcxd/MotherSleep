@@ -99,7 +99,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.5.0)
-  - MOBFoundation (3.2.24)
+  - MOBFoundation (3.2.25)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
     - nanopb/encode (= 1.30906.0)
@@ -245,7 +245,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
+  MOBFoundation: eaeb2e9e26a4155fa931020fb275d83445da0e09
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
