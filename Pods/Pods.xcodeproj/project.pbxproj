@@ -1839,7 +1839,6 @@
 		28F10AFF5E25CA41CB0902FD93DD3BD3 /* Mantle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.debug.xcconfig; sourceTree = "<group>"; };
 		29C7CAF7F72C7A17622CF76679963511 /* GULKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainUtils.h; path = GoogleUtilities/Environment/Private/GULKeychainUtils.h; sourceTree = "<group>"; };
 		29CC3037A9C50D2612FCA22196A45F0D /* QNDes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDes.h; path = HappyDNS/Util/QNDes.h; sourceTree = "<group>"; };
-		2A384D0ABC17CCFA2C5C6CC0F687F40D /* libjcore-ios-2.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.4.0.a"; sourceTree = "<group>"; };
 		2A43D729B3710A622831929ADE1DCE76 /* FIRInstallationsAPIService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsAPIService.h; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h; sourceTree = "<group>"; };
 		2A46CCCEEFB6AD8D68E486847C7C06E8 /* SCLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLButton.m; path = SCLAlertView/SCLButton.m; sourceTree = "<group>"; };
 		2A7717EB12F0EBD296DD951F741FC0C6 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKExtension.framework; path = SDK/ShareSDK/Support/Optional/ShareSDKExtension.framework; sourceTree = "<group>"; };
@@ -2569,6 +2568,7 @@
 		C6C1537B59258A9DF97E603ACA05A834 /* QNDnspodFree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDnspodFree.h; path = HappyDNS/Http/QNDnspodFree.h; sourceTree = "<group>"; };
 		C71B2F3216BA748877FF3A43FD3BA739 /* ELCAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetCell.h; path = Classes/ELCImagePicker/ELCAssetCell.h; sourceTree = "<group>"; };
 		C7241C7F31FA4A8B4CE2724691406D1C /* FIROptionsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptionsInternal.h; path = FirebaseCore/Sources/Private/FIROptionsInternal.h; sourceTree = "<group>"; };
+		C7321338320B6391B0C1EB437F0CFF03 /* libjcore-ios-2.6.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.6.0.a"; sourceTree = "<group>"; };
 		C734A2F794135C50050A8F83F5084D46 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
 		C76627C76CB9FF48F07521C111CFC4A5 /* FIRStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStackFrame.h; path = Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FIRStackFrame.h; sourceTree = "<group>"; };
 		C79534F908AAA9013E9B0B77DDCB7AD3 /* FIRComponentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentType.h; path = FirebaseCore/Sources/Private/FIRComponentType.h; sourceTree = "<group>"; };
@@ -3161,14 +3161,6 @@
 			isa = PBXGroup;
 			children = (
 				95D3B1ABF73207F9CD4A60B42AFDAC9E /* UMMobClick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0C6CA158CB1B0FA4EEB978A4D60459B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A384D0ABC17CCFA2C5C6CC0F687F40D /* libjcore-ios-2.4.0.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3861,6 +3853,14 @@
 			isa = PBXGroup;
 			children = (
 				1420791E08F0933AE243A3F8DA058257 /* libMiPushSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58686A0B9A8D390D4A9A9257AAB3B87A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7321338320B6391B0C1EB437F0CFF03 /* libjcore-ios-2.6.0.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -5131,7 +5131,7 @@
 		D4DB5BFCB4F2F047677C9CC3CBD4658C /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				0C6CA158CB1B0FA4EEB978A4D60459B0 /* Frameworks */,
+				58686A0B9A8D390D4A9A9257AAB3B87A /* Frameworks */,
 				5C62790983F1BDD9D73707DA7D7A0B44 /* Support Files */,
 			);
 			name = JCore;
