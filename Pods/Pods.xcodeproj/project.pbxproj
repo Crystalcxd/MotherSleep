@@ -1811,6 +1811,7 @@
 		245A56324296CA32C1A88084AAF03615 /* HappyDNS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HappyDNS-prefix.pch"; sourceTree = "<group>"; };
 		24656A0B34C16031C30D7C5249E3E364 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		24906358D4472592AAB45254D975D5E2 /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A27388E1947183E03B34A1E8EE8B3D /* libjpush-ios-3.5.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.5.2.a"; sourceTree = "<group>"; };
 		24A9CCDFFFF33DE6911474CC0B9488C9 /* SCLAlertView-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-prefix.pch"; sourceTree = "<group>"; };
 		24CDA9A79DE245754DA8F11E23343BD6 /* GULSceneDelegateSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSceneDelegateSwizzler.m; path = GoogleUtilities/SceneDelegateSwizzler/GULSceneDelegateSwizzler.m; sourceTree = "<group>"; };
 		24CDED3744FCDE61D3B550E4B7886011 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
@@ -1839,7 +1840,6 @@
 		28F10AFF5E25CA41CB0902FD93DD3BD3 /* Mantle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.debug.xcconfig; sourceTree = "<group>"; };
 		29C7CAF7F72C7A17622CF76679963511 /* GULKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainUtils.h; path = GoogleUtilities/Environment/Private/GULKeychainUtils.h; sourceTree = "<group>"; };
 		29CC3037A9C50D2612FCA22196A45F0D /* QNDes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDes.h; path = HappyDNS/Util/QNDes.h; sourceTree = "<group>"; };
-		2A384D0ABC17CCFA2C5C6CC0F687F40D /* libjcore-ios-2.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.4.0.a"; sourceTree = "<group>"; };
 		2A43D729B3710A622831929ADE1DCE76 /* FIRInstallationsAPIService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsAPIService.h; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h; sourceTree = "<group>"; };
 		2A46CCCEEFB6AD8D68E486847C7C06E8 /* SCLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLButton.m; path = SCLAlertView/SCLButton.m; sourceTree = "<group>"; };
 		2A7717EB12F0EBD296DD951F741FC0C6 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKExtension.framework; path = SDK/ShareSDK/Support/Optional/ShareSDKExtension.framework; sourceTree = "<group>"; };
@@ -2212,6 +2212,7 @@
 		7ABC8E093728D8DF279776BC2058005D /* QNResponseInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResponseInfo.h; path = QiniuSDK/Http/QNResponseInfo.h; sourceTree = "<group>"; };
 		7ABD44A2C62502FB8893E66BC97AB0BA /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		7B47B9B1AA7E4A55317E8F3B05CAABF3 /* FIRCLSRecordApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCLSRecordApplication.m; path = Crashlytics/Crashlytics/Models/Record/FIRCLSRecordApplication.m; sourceTree = "<group>"; };
+		7BF55A922D8D21073B28759B8325B743 /* libjcore-ios-2.6.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.6.2.a"; sourceTree = "<group>"; };
 		7C37531DA1A421E95DAC7244DBCED017 /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SLKTextView+SLKAdditions.m"; path = "Source/SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
 		7C4D1EE3C3303B2D162C6022A737E516 /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
 		7C990625339D816D1A77732BC7BFFDEB /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
@@ -2664,7 +2665,6 @@
 		D9DC9E93B00276B23753966052B40EE8 /* FIRCLSFCRAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCLSFCRAnalytics.m; path = Crashlytics/Crashlytics/Helpers/FIRCLSFCRAnalytics.m; sourceTree = "<group>"; };
 		DA01FD2824C76192E927C1B90798D326 /* QNAsyncRun.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNAsyncRun.m; path = QiniuSDK/Utils/QNAsyncRun.m; sourceTree = "<group>"; };
 		DA4241AFC9C76ACD8310154D16C3A57A /* GoogleUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.release.xcconfig; sourceTree = "<group>"; };
-		DA58B45CBB6EA3CEA1E082B2BA504775 /* libjpush-ios-3.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.4.0.a"; sourceTree = "<group>"; };
 		DAB29F4E24965A326D697F53B7DA2B44 /* Pods-MotherSleep-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MotherSleep-acknowledgements.plist"; sourceTree = "<group>"; };
 		DAE584149F498CFB2F2EEF5F9DFB335A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		DB08B49C66FF7BDD360EE53DEE52BE8A /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
@@ -3165,14 +3165,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0C6CA158CB1B0FA4EEB978A4D60459B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A384D0ABC17CCFA2C5C6CC0F687F40D /* libjcore-ios-2.4.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0C6DDAD9C1D66E92B48C803E101BD16B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -3648,6 +3640,14 @@
 			path = "../Target Support Files/ShareSDK3";
 			sourceTree = "<group>";
 		};
+		3B389A0C23C5EDB92A44C1184BC21907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF55A922D8D21073B28759B8325B743 /* libjcore-ios-2.6.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E51F16CB77D59A0B0913F612151B875 /* ShareSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -3959,14 +3959,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		5F87B28CA79F09E26F055E268C2155D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DA58B45CBB6EA3CEA1E082B2BA504775 /* libjpush-ios-3.4.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		61DADD21D3258A75A3E44AB6AAFE8116 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -4133,7 +4125,7 @@
 			isa = PBXGroup;
 			children = (
 				11E554BF0694B4B19681975D0B1D3DF5 /* JPUSHService.h */,
-				5F87B28CA79F09E26F055E268C2155D1 /* Frameworks */,
+				9A5E0E971787D718D7E441329E1BEC6B /* Frameworks */,
 				785F1B37EF5F2DFB889476CE91A9F728 /* Support Files */,
 			);
 			name = JPush;
@@ -4460,6 +4452,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/HappyDNS";
+			sourceTree = "<group>";
+		};
+		9A5E0E971787D718D7E441329E1BEC6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A27388E1947183E03B34A1E8EE8B3D /* libjpush-ios-3.5.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9C5617528100BD9EF6595E164E1FFEC6 /* Support Files */ = {
@@ -5131,7 +5131,7 @@
 		D4DB5BFCB4F2F047677C9CC3CBD4658C /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				0C6CA158CB1B0FA4EEB978A4D60459B0 /* Frameworks */,
+				3B389A0C23C5EDB92A44C1184BC21907 /* Frameworks */,
 				5C62790983F1BDD9D73707DA7D7A0B44 /* Support Files */,
 			);
 			name = JCore;

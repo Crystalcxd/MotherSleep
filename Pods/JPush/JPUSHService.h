@@ -9,7 +9,7 @@
  * Copyright (c) 2011 ~ 2017 Shenzhen HXHG. All rights reserved.
  */
 
-#define JPUSH_VERSION_NUMBER 3.4.0
+#define JPUSH_VERSION_NUMBER 3.5.2
 
 #import <Foundation/Foundation.h>
 
@@ -60,6 +60,12 @@ typedef NS_ENUM(NSUInteger, JPAuthorizationStatus) {
 typedef NS_ENUM(NSInteger,JPushInMessageContentType){
     JPushAdContentType = 1,         //广告类型的inMessage
     JPushNotiContentType = 2,       //通知类型的inMessage
+};
+
+typedef NS_OPTIONS(NSUInteger, JPInMessageType) {
+    JPInMessageTypeBanner    = (1 << 0),   // 横幅
+    JPInMessageTypeModal     = (1 << 1),   // 模态
+    JPInMessageTypeFloat     = (1 << 2),   // 小浮窗
 };
 
 /*!
@@ -664,6 +670,28 @@ typedef NS_ENUM(NSInteger,JPushInMessageContentType){
 *
 */
 + (void)pullInMessageCompletion:(JPUSHInMssageCompletion)completion;
+
+
+/*!
+* @abstract 主动拉取应用内消息的接口
+*
+* @param types 应用内消息样式
+*
+* @discussion 拉取结果的回调
+*/
++ (void)pullInMessageWithTypes:(NSUInteger)types completion:(JPUSHInMssageCompletion)completion;
+
+
+/*!
+* @abstract 向sdk报告当前展示的控制器的名称
+*
+* @param className 当前页面的类名
+*
+* @discussion 如果类名在黑名单内，就会关闭所有处于曝光状态的inapp
+*
+*/
++ (void)currentViewControllerName:(NSString *)className;
+
 
 ///----------------------------------------------------
 ///********************下列方法已过期********************
