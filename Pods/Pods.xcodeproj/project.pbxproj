@@ -1811,7 +1811,6 @@
 		245A56324296CA32C1A88084AAF03615 /* HappyDNS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HappyDNS-prefix.pch"; sourceTree = "<group>"; };
 		24656A0B34C16031C30D7C5249E3E364 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		24906358D4472592AAB45254D975D5E2 /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		24A27388E1947183E03B34A1E8EE8B3D /* libjpush-ios-3.5.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.5.2.a"; sourceTree = "<group>"; };
 		24A9CCDFFFF33DE6911474CC0B9488C9 /* SCLAlertView-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-prefix.pch"; sourceTree = "<group>"; };
 		24CDA9A79DE245754DA8F11E23343BD6 /* GULSceneDelegateSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSceneDelegateSwizzler.m; path = GoogleUtilities/SceneDelegateSwizzler/GULSceneDelegateSwizzler.m; sourceTree = "<group>"; };
 		24CDED3744FCDE61D3B550E4B7886011 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
@@ -2636,6 +2635,7 @@
 		D3BF2758A8D808A227FDC98B01F034FA /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		D3E4010FC8B980D6A990139FE4B950CB /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		D46C56DAC8AF0F639D74B7A88554DAB6 /* RegexKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		D4AFB8F7B20FE2AF3593AA5C22C5EAF7 /* libjpush-ios-3.6.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.6.1.a"; sourceTree = "<group>"; };
 		D56C34EAFC34634E7B624AC212497EE5 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
 		D585C8C381DA5FB6DB50F2245D0A5CB6 /* GVUserDefaults.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GVUserDefaults.release.xcconfig; sourceTree = "<group>"; };
 		D586AD614757275CAD0F15B45AE0D84A /* QNVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNVersion.h; path = QiniuSDK/Utils/QNVersion.h; sourceTree = "<group>"; };
@@ -3865,6 +3865,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5118B15F8EF88E52AA29BDF39DCDDFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFB8F7B20FE2AF3593AA5C22C5EAF7 /* libjpush-ios-3.6.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		598E43F9DB98265DA8795E0C0C32921D /* nanopb */ = {
 			isa = PBXGroup;
 			children = (
@@ -4125,7 +4133,7 @@
 			isa = PBXGroup;
 			children = (
 				11E554BF0694B4B19681975D0B1D3DF5 /* JPUSHService.h */,
-				9A5E0E971787D718D7E441329E1BEC6B /* Frameworks */,
+				5118B15F8EF88E52AA29BDF39DCDDFB7 /* Frameworks */,
 				785F1B37EF5F2DFB889476CE91A9F728 /* Support Files */,
 			);
 			name = JPush;
@@ -4452,14 +4460,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/HappyDNS";
-			sourceTree = "<group>";
-		};
-		9A5E0E971787D718D7E441329E1BEC6B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				24A27388E1947183E03B34A1E8EE8B3D /* libjpush-ios-3.5.2.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9C5617528100BD9EF6595E164E1FFEC6 /* Support Files */ = {
