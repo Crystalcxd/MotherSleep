@@ -9,7 +9,7 @@
  * Copyright (c) 2011 ~ 2017 Shenzhen HXHG. All rights reserved.
  */
 
-#define JPUSH_VERSION_NUMBER 3.6.1
+#define JPUSH_VERSION_NUMBER 3.6.2
 
 #import <Foundation/Foundation.h>
 
@@ -20,6 +20,7 @@
 @class UNNotificationSettings;
 @class UNNotificationRequest;
 @class UNNotification;
+@class UIView;
 @protocol JPUSHRegisterDelegate;
 @protocol JPUSHGeofenceDelegate;
 @protocol JPushInMessageDelegate;
@@ -668,6 +669,14 @@ typedef NS_OPTIONS(NSUInteger, JPInMessageType) {
 *
 */
 + (void)setInMessageDelegate:(id<JPushInMessageDelegate>)inMessageDelegate;
+
+/*!
+* @abstract 设置应用内消息的inMessageView的父控件
+*
+* @discussion 建议设置成当前展示的window，SDK默认取当前APP顶层的Window。
+*
+*/
++ (void)setInMessageSuperView:(UIView *)view;
 
 
 /*!
